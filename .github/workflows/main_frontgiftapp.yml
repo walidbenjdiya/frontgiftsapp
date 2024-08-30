@@ -30,14 +30,14 @@ jobs:
       # - name: Install zip
       #   run: sudo apt-get install -y zip
         
-      # - name: Compress files
-      #   run: Compress-Archive -Path . -DestinationPath artifact.zip
+      - name: Compress files
+        run: Compress-Archive -Path . -DestinationPath artifact.zip
   
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
         with:
           name: node-app
-          path: .
+          path: artifact.zip
 
   deploy:
     runs-on: ubuntu-latest
@@ -53,7 +53,10 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: node-app
-      
+          
+      - name: Extract artifact
+        run: unzip artifact.zip -d ./output_directory
+        
       - name: Login to Azure
         uses: azure/login@v2
         with:
@@ -67,5 +70,5 @@ jobs:
         with:
           app-name: 'frontgiftapp'
           slot-name: 'Production'
-          package: .
+          package: ./output_directory
           
