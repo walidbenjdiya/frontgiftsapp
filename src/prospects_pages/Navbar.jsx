@@ -36,7 +36,7 @@ const Navbar = ({ handleLogin }) => {
                 <a href='/' style={{ fontSize: '30px', fontWeight: 'bold', color: 'white', backgroundColor: 'transparent', border: '0', display: 'flex', textDecoration: 'none', }} >
                     {/* <span>GiftsToWin</span> */}
                     <div style={{ position: 'relative', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                        <img src="/src/assets/giftsToWin.png" alt="" style={{ height: '95px', width: '205px', marginLeft: '-20px' }} />
+                        <img src="/giftsToWin.png" alt="" style={{ height: '95px', width: '205px', marginLeft: '-20px' }} />
 
                         {/* Random number positioned above the image */}
 
