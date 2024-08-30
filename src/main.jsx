@@ -46,7 +46,7 @@ const router = createBrowserRouter(
   )
 );
 const keycloak = new Keycloak({
-  url: 'http://localhost:8080',
+  url: 'https://13.53.174.192:8443/',
   realm: 'cpa-app',
   clientId: 'front-end-flutter-client'
 });

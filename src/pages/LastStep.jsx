@@ -73,14 +73,14 @@ const LastStep = () => {
     return (
         <Box >
             <Box >
-                <img src={itemName === '' ? 'handlclick()' : `/src/assets/${itemName}Hd.png`} alt="" style={{ height: '270px', width: '100%', margin: '-25px 0px 0px 0px', padding: '0px' }} />
+                <img src={itemName === '' ? 'handlclick()' : `/${itemName}Hd.png`} alt="" style={{ height: '270px', width: '100%', margin: '-25px 0px 0px 0px', padding: '0px' }} />
 
                 <span style={{ fontWeight: 'bold', fontSize: '30px', color: '#14385b' }}> Last Step</span>
 
                 <br></br>
                 <span style={{ fontWeight: 'inherit', fontSize: '20px', color: '#64686c' }}>You&apos;re almost there! Complete these quick offers to confirm your participation. Each step brings you closer to your reward. Finish them to secure your spot in the giveaway.
                     Luck is on your side—just one final step to go! </span><br></br>
-                <img src={itemName ? `/src/assets/${itemName}.png` : ''} alt="" style={{ height: '40%', width: '50%' }} />
+                <img src={itemName ? `/${itemName}.png` : ''} alt="" style={{ height: '40%', width: '50%' }} />
                 <div style={{ margin: '20px 0px' }}>
                     <span style={{ fontWeight: 'bold', fontSize: '26px', color: 'black' }}> **</span><span style={{ fontWeight: 'bold', fontSize: '20px', color: 'black', backgroundColor: '#e5b80b' }}> More Offers Completed, More Chances to Win! </span><span style={{ fontWeight: 'bold', fontSize: '26px', color: 'black' }}> **</span><br></br>
                     <span style={{ fontWeight: 'bold', fontSize: '25px', color: 'black' }}> **</span><span style={{ fontWeight: 'bold', fontSize: '20px', color: 'black', backgroundColor: '#e5b80b' }}> More Participants, More Winners! </span><span style={{ fontWeight: 'bold', fontSize: '25px', color: 'black' }}> **</span>
@@ -94,7 +94,7 @@ const LastStep = () => {
                         <span style={{ backgroundColor: '#e5b80b', fontWeight: 'bold', color: 'black' }}> The more offers you complete, the better your chances of scoring amazing rewards!</span></Typography>
 
                 </Box>
-                {/* <img src="/src/assets/cadeau.png" alt="" style={{ height: '50px', width: '50px', margin: '0px 20px 0px 0px ' }} />
+                {/* <img src="/cadeau.png" alt="" style={{ height: '50px', width: '50px', margin: '0px 20px 0px 0px ' }} />
                         <Button variant="contained" sx={{ fontSize: '90%', fontWeight: 'bold', height: '50px', width: '100%', backgroundColor: '#14385b', borderRadius: '20px' }} onClick={() => window.open(`${item.url}${localStorage.getItem('data')}`, '_blank')}>{item.description}</Button>
                      */}
                 <Stack
@@ -122,7 +122,7 @@ const LastStep = () => {
                             <CardActionArea>
                                 <CardMedia
                                     component="img"
-                                    image="/src/assets/cadeau.png"
+                                    image="/cadeau.png"
                                     alt="green iguana"
                                 />
                                 <CardContent sx={{margin:'0px', padding:'14px'}}>

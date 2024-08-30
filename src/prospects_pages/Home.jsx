@@ -16,7 +16,7 @@ const Home = ({ keycloak }) => {
                 </div>
                 <div className="carousel-inner">
                     <div className="carousel-item active" style={{ height: '32rem' }}>
-                        <img className="bd-placeholder-img" width="100%" height="100%" src='/src/assets/pano1.png' aria-hidden="true" preserveAspectRatio="xMidYMid slice" >
+                        <img className="bd-placeholder-img" width="100%" height="100%" src='/pano1.png' aria-hidden="true" preserveAspectRatio="xMidYMid slice" >
 
                         </img>
                         <div className="container">
@@ -40,7 +40,7 @@ const Home = ({ keycloak }) => {
                         </div>
                     </div>
                     <div className="carousel-item" style={{ height: '32rem' }}>
-                        <img className="bd-placeholder-img" width="100%" height="100%" src='/src/assets/pano2.png' aria-hidden="true" preserveAspectRatio="xMidYMid slice" >
+                        <img className="bd-placeholder-img" width="100%" height="100%" src='/pano2.png' aria-hidden="true" preserveAspectRatio="xMidYMid slice" >
                         </img>
                         <div className="container">
                             <div className="carousel-caption">
@@ -63,7 +63,7 @@ const Home = ({ keycloak }) => {
                         </div>
                     </div>
                     <div className="carousel-item" style={{ height: '32rem' }}>
-                        <img className="bd-placeholder-img" width="100%" height="100%" src='/src/assets/pano3.png' aria-hidden="true" preserveAspectRatio="xMidYMid slice" >
+                        <img className="bd-placeholder-img" width="100%" height="100%" src='/pano3.png' aria-hidden="true" preserveAspectRatio="xMidYMid slice" >
                         </img>
                         <div className="container">
                             <div className="carousel-caption text-end">
@@ -104,18 +104,18 @@ const Home = ({ keycloak }) => {
             <div className='container marketing' style={{ marginTop: '50px' }}>
                 <div className="row">
                     <div className="col-lg-4" style={{ textAlign: 'center' }}>
-                        <img className="bd-placeholder-img rounded-circle" width="100" height="100" src='/src/assets/trust.png' title='trust' >
+                        <img className="bd-placeholder-img rounded-circle" width="100" height="100" src='/trust.png' title='trust' >
                         </img>
                         <p>We build trust with our community through secure and transparent giveaways. Each experience is crafted to be both thrilling and deeply respectful of you..</p>
                     </div>
                     <div className="col-lg-4" style={{ textAlign: 'center' }}>
-                        <img className="bd-placeholder-img rounded-circle" width="100" height="100" src='/src/assets/diversity.png' title='diversity' >
+                        <img className="bd-placeholder-img rounded-circle" width="100" height="100" src='/diversity.png' title='diversity' >
                         </img>
 
                         <p>We offer a diverse range of prizes, from in-game assets and consoles to exclusive subscriptions and merchandise. Whatever your passion, there&apos;s something for every gamer on our platform.</p>
                     </div>
                     <div className="col-lg-4" style={{ textAlign: 'center' }}>
-                        <img className="bd-placeholder-img rounded-circle" width="100" height="100" src='/src/assets/24-hours.png' title='daily' >
+                        <img className="bd-placeholder-img rounded-circle" width="100" height="100" src='/24-hours.png' title='daily' >
                         </img>
                         <p>We are committed to delivering your prizes within 24 hours after each giveaway. Soon, our contests will be even more thrilling, with lightning-fast giveaways that last no more than 24 hours!</p>
                     </div>
@@ -134,7 +134,7 @@ const Home = ({ keycloak }) => {
                                 <CardMedia
                                     component="img"
                                     height="400"
-                                    image="/src/assets/cat1.webp"
+                                    image="/cat1.webp"
                                     alt="green iguana"
                                 />
                                 <CardContent
@@ -164,7 +164,7 @@ const Home = ({ keycloak }) => {
                                 <CardMedia
                                     component="img"
                                     height="400"
-                                    image="/src/assets/cat2.webp"
+                                    image="/cat2.webp"
                                     alt="green iguana"
                                 />
                                 <CardContent
@@ -195,7 +195,7 @@ const Home = ({ keycloak }) => {
                                 <CardMedia
                                     component="img"
                                     height="400"
-                                    image="/src/assets/cat3.webp"
+                                    image="/cat3.webp"
                                     alt="green iguana"
                                 />
                                 <CardContent
@@ -225,7 +225,7 @@ const Home = ({ keycloak }) => {
                                 <CardMedia
                                     component="img"
                                     height="400"
-                                    image="/src/assets/cat4.webp"
+                                    image="/cat4.webp"
                                     alt="green iguana"
                                 />
                                 <CardContent
@@ -259,7 +259,7 @@ const Home = ({ keycloak }) => {
 
 
                     <div className="card text-bg-dark" style={{ height: '350px' }}>
-                        <img src="/src/assets/lastimg.png" height={'100%'} className="card-img" alt="..." />
+                        <img src="/lastimg.png" height={'100%'} className="card-img" alt="..." />
                         <div className="card-img-overlay d-flex flex-column justify-content-end align-items-center">
                             <Button
                                 variant="contained"
@@ -285,19 +285,19 @@ const Home = ({ keycloak }) => {
                     </Typography>
                     <div className='row' style={{ justifyContent: 'center' }}>
                         <button style={{ height: '50px', width: '70px', marginTop: '40px', marginRight: '20px', backgroundColor: 'white', border: '0' }}>
-                            <img src='/src/assets/facebook.png' height='100%' width='100%' ></img>
+                            <img src='/facebook.png' height='100%' width='100%' ></img>
                         </button>
                         <button style={{ height: '50px', width: '70px', marginTop: '40px', marginRight: '20px', backgroundColor: 'transparent', border: '0' }}>
-                            <img src='/src/assets/instagram.png' height='100%' width='100%' ></img>
+                            <img src='/instagram.png' height='100%' width='100%' ></img>
                         </button>
                         <button style={{ height: '50px', width: '70px', marginTop: '40px', marginRight: '20px', backgroundColor: 'transparent', border: '0' }}>
-                            <img src='/src/assets/Tiktok.png' height='100%' width='100%' ></img>
+                            <img src='/Tiktok.png' height='100%' width='100%' ></img>
                         </button>
                         <button style={{ height: '50px', width: '70px', marginTop: '40px', marginRight: '20px', backgroundColor: 'transparent', border: '0' }}>
-                            <img src='/src/assets/twitch.png' height='100%' width='100%' ></img>
+                            <img src='/twitch.png' height='100%' width='100%' ></img>
                         </button>
                         <button style={{ height: '50px', width: '70px', marginTop: '40px', backgroundColor: 'transparent', border: '0' }}>
-                            <img src='/src/assets/x.png' height='100%' width='100%' ></img>
+                            <img src='/x.png' height='100%' width='100%' ></img>
                         </button>
                     </div>
                 </div>

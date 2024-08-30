@@ -70,11 +70,11 @@ const array1 = [
   { text: "History", icon: <HistoryIcon sx={{color:'white'}}/>, path: "/offers/history" },
 ]
 const array2 = [
-  { text: "facebook", icon: "/src/assets/facebook.png", path: "https://www.facebook.com" },
-  { text: "instagram", icon: "/src/assets/instagram.png", path: "https://www.instagram.com" },
-  { text: "tiktok", icon: "/src/assets/tiktok.png", path: "https://www.tiktok.com" },
-  { text: "twitch", icon: "/src/assets/twitch.png", path: "https://www.twitch.tv/" },
-  { text: "x", icon: "/src/assets/x2.png", path: "https://x.com/" },
+  { text: "facebook", icon: "/facebook.png", path: "https://www.facebook.com" },
+  { text: "instagram", icon: "/instagram.png", path: "https://www.instagram.com" },
+  { text: "tiktok", icon: "/tiktok.png", path: "https://www.tiktok.com" },
+  { text: "twitch", icon: "/twitch.png", path: "https://www.twitch.tv/" },
+  { text: "x", icon: "/x2.png", path: "https://x.com/" },
 ]
 
 const SideBar = ({ open }) => {
