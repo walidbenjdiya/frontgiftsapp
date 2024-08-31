@@ -42,7 +42,7 @@ const TopBar = ({ open, keycloak, userData, handleDrawerOpen, id }) => {
 
 
   useEffect(() => {
-    fetch(`http://localhost:8081/notifications/${id}`, {
+    fetch(`https://giftstowin-d4dwgeddf4dfe0av.francecentral-01.azurewebsites.net/notifications/${id}`, {
       method: "GET",
       headers: {
         'Content-Type': 'application/json',
@@ -101,7 +101,7 @@ const TopBar = ({ open, keycloak, userData, handleDrawerOpen, id }) => {
           <MenuIcon />
         </IconButton>
         <Typography variant="h6" noWrap component="div" sx={{ fontFamily: 'monospace', fontWeight: 'bold', margin: '0px 0px 0px 30px' }}>
-                        <img src="/giftsToWin.png" alt="" style={{ height: '75px', width: '165px', marginLeft: '-20px' }} />
+                        <img src="/giftsToWin.png" alt="" style={{ height: '75px', width: '165px', marginLeft: '-40px' }} />
 
                         {/* Random number positioned above the image */}
 

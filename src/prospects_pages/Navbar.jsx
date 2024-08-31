@@ -24,7 +24,7 @@ const Navbar = ({ handleLogin }) => {
         const interval = setInterval(() => {
             setRandomNumber(generateRandomNumber());
             setColor(generateRandomColor());
-        }, 1000);
+        }, 1500);
 
         // Cleanup interval on component unmount
         return () => clearInterval(interval);
@@ -36,7 +36,7 @@ const Navbar = ({ handleLogin }) => {
                 <a href='/' style={{ fontSize: '30px', fontWeight: 'bold', color: 'white', backgroundColor: 'transparent', border: '0', display: 'flex', textDecoration: 'none', }} >
                     {/* <span>GiftsToWin</span> */}
                     <div style={{ position: 'relative', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                        <img src="/giftsToWin.png" alt="" style={{ height: '95px', width: '205px', marginLeft: '-20px' }} />
+                        <img src="/giftsToWin.png" alt="" style={{ height: '95px', width: '205px', marginLeft: '-40px' }} />
 
                         {/* Random number positioned above the image */}
 
@@ -78,20 +78,20 @@ const Navbar = ({ handleLogin }) => {
                             <a className="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false" style={{ color: 'white' }}>Follow us</a>
                             <ul className="dropdown-menu">
                                 <li style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '5px' }}>
-                                    <img src='/src/assets/facebook.png' height='23px' width='23px' ></img>
-                                    <a className="dropdown-item" href="#" style={{ color: '#ff5722' }}>GiftToWin</a></li>
+                                    <img src='/facebook.png' height='23px' width='23px' ></img>
+                                    <a className="dropdown-item" href="https://www.facebook.com/people/Giftstowin/61565358622357/" style={{ color: 'blue' }}>@Giftstowin</a></li>
                                 <li style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '5px' }}>
-                                    <img src='/src/assets/instagram.png' height='23px' width='23px' ></img>
-                                    <a className="dropdown-item" href="#" style={{ color: '#ff5722' }}>GiftToWin</a></li>
+                                    <img src='/instagram.png' height='23px' width='23px' ></img>
+                                    <a className="dropdown-item" href="https://www.instagram.com/gifts_towin/" style={{ color: '#ff5722' }}>@gifts_towin</a></li>
                                 <li style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '5px' }}>
-                                    <img src='/src/assets/tiktok.png' height='23px' width='23px' ></img>
-                                    <a className="dropdown-item" href="#" style={{ color: '#ff5722' }}>GiftToWin</a></li>
+                                    <img src='/tiktok.png' height='23px' width='23px' ></img>
+                                    <a className="dropdown-item" href="https://www.tiktok.com/@giftstowin" style={{ color: 'black' }}>@giftstowin</a></li>
                                 <li style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '5px' }}>
-                                    <img src='/src/assets/twitch.png' height='23px' width='23px' ></img>
-                                    <a className="dropdown-item" href="#" style={{ color: '#ff5722' }}>GiftToWin</a></li>
+                                    <img src='/twitch.png' height='23px' width='23px' ></img>
+                                    <a className="dropdown-item" href="https://www.twitch.tv/giftstowin" style={{ color: '#7801D8' }}>@giftstowin</a></li>
                                 <li style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '5px' }}>
-                                    <img src='/src/assets/x.png' height='23px' width='23px' ></img>
-                                    <a className="dropdown-item" href="#" style={{ color: '#ff5722' }}>GiftToWin</a></li>
+                                    <img src='/x.png' height='23px' width='23px' ></img>
+                                    <a className="dropdown-item" href="https://x.com/Gifts_To_win" style={{ color: 'black' }}>@Gifts_To_win</a></li>
                             </ul>
                         </li>
                         <li className="nav-item">

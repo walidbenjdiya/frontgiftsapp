@@ -12,7 +12,7 @@ const columns = [
 const History = () => {
   const [historyData, sethistoryData]=useState([]);
   useEffect(() => {
-    fetch(`http://localhost:8081/history/${localStorage.getItem('userId')}`, {
+    fetch(`https://giftstowin-d4dwgeddf4dfe0av.francecentral-01.azurewebsites.net/history/${localStorage.getItem('userId')}`, {
       method: "GET",
       headers: {
         'Content-Type': 'application/json',

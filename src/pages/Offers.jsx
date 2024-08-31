@@ -6,7 +6,7 @@ const Offers = () => {
   const { keycloak } = useOutletContext();
 
   const [val, setval] = useState('');
-  const [val2, setval2] = useState(false);
+  const [val2, setval2] = useState(true);
   useEffect(() => {
     if (keycloak.profile) {
       setval(keycloak.profile.username.split('@')[0]);
@@ -15,7 +15,7 @@ const Offers = () => {
   }, [keycloak.profile]);
   useEffect(() => {
     
-    fetch(`http://localhost:8081/listoffres`, {
+    fetch(`https://giftstowin-d4dwgeddf4dfe0av.francecentral-01.azurewebsites.net/listoffres`, {
       method: "GET",
       headers: {
         'Content-Type': 'application/json',
@@ -68,16 +68,21 @@ const Offers = () => {
         flexDirection: 'row',
         justifyContent: 'space-between', // Espace entre les éléments
         alignItems: 'flex-start', // Aligner les éléments verticalement au centre
-
+        
       }}>
         {/* <DrawerHeader /> */}
-        <Box sx={{ margin: '40px 0px' }}>
-          <Typography paragraph sx={{ fontWeight: 'bold', fontSize: '30px' }}>
+        <Box sx={{ marginTop: '40px' , maxWidth:'55%'}}>
+          <Typography paragraph sx={{ fontWeight: 'bold', fontSize: '20px' }}>
             Welcome <span>{keycloak.profile ? val : "Username"}</span>,
           </Typography>
           <Typography paragraph sx={{ fontWeight: 'bold', fontSize: '30px' }}>
             The <span style={{ color: color }}>GiveAways</span>  Of This Week
           </Typography>
+          <Box sx={{ backgroundColor:'#94D0FF', borderRadius:'20px', border:'1px solid white;'}}>
+          <Typography sx={{padding:'10px', color:'black', fontStyle:'oblique'}}>
+           🚀 Didn’t find the giveaway of your dreams? 🎁 Reach out to us on social media! If enough of you request the same gift, 🎉 we'll gladly add it! 🎮🎧 Your opinion matters, so speak up and stay tuned for exciting updates! ✨
+            </Typography>
+          </Box>
         </Box>
         <Box>
           <Chat ></Chat>

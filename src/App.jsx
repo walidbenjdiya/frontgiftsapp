@@ -91,7 +91,7 @@ export default function MiniDrawer() {
       //   });
 
       if (!sessionStorage.getItem('hasLoggedIn')) {
-        fetch(`http://localhost:8081/welcome`, {
+        fetch(`https://giftstowin-d4dwgeddf4dfe0av.francecentral-01.azurewebsites.net/welcome`, {
           method: "GET",
           headers: {
             'Content-Type': 'application/json',

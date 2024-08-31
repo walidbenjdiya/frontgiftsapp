@@ -12,7 +12,7 @@ const Profile = () => {
 
 const [userData, setuserData]=useState('');
   useEffect(() => {
-    fetch(`http://localhost:8081/users/${localStorage.getItem('userId')}`, {
+    fetch(`https://giftstowin-d4dwgeddf4dfe0av.francecentral-01.azurewebsites.net/users/${localStorage.getItem('userId')}`, {
       method: "GET",
       headers: {
         'Content-Type': 'application/json',
@@ -43,7 +43,7 @@ const [userData, setuserData]=useState('');
     data.id = userData.id;
     data.username = userData.username;
     // console.log(data);
-    fetch(`http://localhost:8081/addUser`, {
+    fetch(`https://giftstowin-d4dwgeddf4dfe0av.francecentral-01.azurewebsites.net/addUser`, {
       method: "POST",
       headers: {
         'Content-Type': 'application/json',

@@ -22,7 +22,7 @@ const Home = ({ keycloak }) => {
                         <div className="container">
                             <div className="carousel-caption text-start">
                                 <h1>Gift Cards Giveaways</h1>
-                                <p className="opacity-75">Explore our exciting giveaways where you can win gift cards for a variety of devices, including gaming consoles, mobile apps, and more! Don&apos;t miss your chance to enhance your gaming experience or get your favorite apps for free. Enter now and make the most of these amazing offers!</p>
+                                <p className="opacity-75">Win exciting gift cards for gaming consoles, mobile apps, and more! Enhance your experience for free—enter now for amazing offers!</p>
                                 <p><Button
                                     variant="contained"
 
@@ -44,8 +44,8 @@ const Home = ({ keycloak }) => {
                         </img>
                         <div className="container">
                             <div className="carousel-caption">
-                                <h1>Participate now to get your Minecraft gift card now!</h1>
-                                <p>Participate now for a chance to win a Minecraft gift card! Unlock exciting adventures and exclusive content to enhance your gaming experience. Don&apos;t miss out—enter today for your chance to win!</p>
+                                {/* <h1>Participate now to get your Minecraft gift card now!</h1> */}
+                                <p style={{fontWeight:'bold'}}>Join now to win a Minecraft gift card! Unlock epic adventures and exclusive content—don&apos;t miss your chance, enter today!</p>
                                 <p><Button
                                     variant="contained"
 
@@ -67,8 +67,8 @@ const Home = ({ keycloak }) => {
                         </img>
                         <div className="container">
                             <div className="carousel-caption text-end">
-                                <h1 style={{ color: '#ff5722', fontWeight: 'bold' }}>Gaming Tournament</h1>
-                                <p>Participate now for a chance to join our epic gaming tournament! Compete against players from around the world and showcase your skills for a chance to win amazing prizes. Don’t miss out—register today and prove you’re the best!</p>
+                                {/* <h1 style={{ color: '#ff5722', fontWeight: 'bold' }}>Gaming Tournament</h1> */}
+                                <p style={{color:'#ff5722', fontWeight:'bold'}}>Join our epic gaming tournament now! Compete globally, showcase your skills, and win incredible prizes. Don’t miss out—register today and prove you're the best!</p>
                                 <p><Button
                                     variant="contained"
 
@@ -254,7 +254,7 @@ const Home = ({ keycloak }) => {
                 </div>
             </div>
             <hr style={{ margin: '46px' }}></hr>
-            <div className="row" style={{ margin: '30px' }}>
+            <div className="row" style={{ margin: '30px 5px 60px 5px', }}>
                 <div className="col-md-7">
 
 
@@ -284,21 +284,21 @@ const Home = ({ keycloak }) => {
                         Join our community on Facebook, Instagram, TikTok, X , and Twitch to participate in exclusive polls. We want to hear your preferences and ideas for our upcoming giveaways! Your feedback matters, and by following us, you can directly influence the prizes we feature on our site. Don’t miss out on the chance to have your voice heard and take part in giveaways reserved for our followers!
                     </Typography>
                     <div className='row' style={{ justifyContent: 'center' }}>
-                        <button style={{ height: '50px', width: '70px', marginTop: '40px', marginRight: '20px', backgroundColor: 'white', border: '0' }}>
+                        <a href='https://www.facebook.com/people/Giftstowin/61565358622357/' style={{ height: '50px', width: '70px', marginTop: '40px', marginRight: '15px', backgroundColor: 'white', border: '0' }}>
                             <img src='/facebook.png' height='100%' width='100%' ></img>
-                        </button>
-                        <button style={{ height: '50px', width: '70px', marginTop: '40px', marginRight: '20px', backgroundColor: 'transparent', border: '0' }}>
+                        </a>
+                        <a href='https://www.instagram.com/gifts_towin/' style={{ height: '50px', width: '70px', marginTop: '40px', marginRight: '15px', backgroundColor: 'transparent', border: '0' }}>
                             <img src='/instagram.png' height='100%' width='100%' ></img>
-                        </button>
-                        <button style={{ height: '50px', width: '70px', marginTop: '40px', marginRight: '20px', backgroundColor: 'transparent', border: '0' }}>
-                            <img src='/Tiktok.png' height='100%' width='100%' ></img>
-                        </button>
-                        <button style={{ height: '50px', width: '70px', marginTop: '40px', marginRight: '20px', backgroundColor: 'transparent', border: '0' }}>
+                        </a>
+                        <a href='https://www.tiktok.com/@giftstowin' style={{ height: '50px', width: '70px', marginTop: '40px', marginRight: '15px', backgroundColor: 'transparent', border: '0' }}>
+                            <img src='/tiktok.png' height='100%' width='100%' ></img>
+                        </a>
+                        <a href='https://www.twitch.tv/giftstowin' style={{ height: '50px', width: '70px', marginTop: '40px', marginRight: '15px', backgroundColor: 'transparent', border: '0' }}>
                             <img src='/twitch.png' height='100%' width='100%' ></img>
-                        </button>
-                        <button style={{ height: '50px', width: '70px', marginTop: '40px', backgroundColor: 'transparent', border: '0' }}>
+                        </a>
+                        <a href='https://x.com/Gifts_To_win' style={{ height: '50px', width: '70px', marginTop: '40px', backgroundColor: 'transparent', border: '0' }}>
                             <img src='/x.png' height='100%' width='100%' ></img>
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>

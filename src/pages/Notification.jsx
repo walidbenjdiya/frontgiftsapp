@@ -14,7 +14,7 @@ const Notification = () => {
   };
 
   useEffect(() => {
-    const eventSource = new EventSource('http://localhost:8081/notification');
+    const eventSource = new EventSource('https://giftstowin-d4dwgeddf4dfe0av.francecentral-01.azurewebsites.net/notification');
     console.log("Notification SSE connection established");
 
     eventSource.onmessage = (event) => {
