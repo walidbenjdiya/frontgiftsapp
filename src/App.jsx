@@ -100,7 +100,8 @@ export default function MiniDrawer() {
         localStorage.setItem('email', profile.email);
       })
           localStorage.setItem('userId', keycloak.idTokenParsed.sub);
-          sessionStorage.setItem('hasLoggedIn', 'true');
+          sessionStorage.setItem('hasLoggedIn', true);
+          console.log(sessionStorage.getItem('hasLoggedIn'))
       // fetch(`http://localhost:8081/users/${keycloak.idTokenParsed.sub}`, {
       //   method: "GET",
       //   headers: {
