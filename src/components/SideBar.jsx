@@ -102,7 +102,7 @@ const SideBar = ({ open }) => {
               onClick={() => {
                 navigate(item.path);
               }}
-              sx={{
+              sx={{marginTop:'6px',
                 minHeight: 48,
                 justifyContent: open ? 'initial' : 'center',
                 px: 2.5,

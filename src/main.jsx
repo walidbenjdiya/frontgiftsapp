@@ -46,9 +46,9 @@ const router = createBrowserRouter(
   )
 );
 const keycloak = new Keycloak({
-  url: 'https://13.53.174.192:8443/',
+  url: 'https://login.giftstowin.com/auth',
   realm: 'cpa-app',
-  clientId: 'front-end-flutter-client'
+  clientId: 'front-end-reactjs-client'
 });
 
 ReactDOM.createRoot(document.getElementById("root")).render(
