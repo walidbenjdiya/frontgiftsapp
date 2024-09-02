@@ -120,8 +120,9 @@ export default function MiniDrawer() {
       //   .catch(err => {
       //     console.error("Failed to fetch user data", err);
       //   });
+      const a=true;
 console.log('1');
-      if (!sessionStorage.getItem('hasLoggedIn')) {
+      if (a) {
         console.log('2');
 
         fetch(`https://giftstowin-d4dwgeddf4dfe0av.francecentral-01.azurewebsites.net/welcome`, {
