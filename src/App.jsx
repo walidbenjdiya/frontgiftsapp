@@ -66,7 +66,7 @@ export default function MiniDrawer() {
     return () => {
       eventSource.close();
     };
-  }, []);
+  }, [keycloak.authenticated]);
 
 
   useEffect(() => {
