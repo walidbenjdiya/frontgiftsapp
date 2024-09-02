@@ -101,6 +101,7 @@ export default function MiniDrawer() {
           .then(response => response.json())
           .then(data => {
             sessionStorage.setItem('hasLoggedIn', 'true');
+            console.log("sessionStorage.setItem('hasLoggedIn', 'true'); est appelé");
           })
           .catch(err => {
           });
