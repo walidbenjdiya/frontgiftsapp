@@ -127,7 +127,7 @@ const LastStep = () => {
                                 />
                                 <CardContent sx={{margin:'0px', padding:'14px'}}>
                                     <Typography gutterBottom sx={{
-                                        fontWeight: 'bold', justifyContent: 'center',fontSize:'100%',
+                                        fontWeight: 'bold', justifyContent: 'center',fontSize:'90%',
                                         display: 'flex',
                                     }} component="div">
                                         {itemName.toUpperCase()} Gift</Typography> <br></br>

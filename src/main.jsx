@@ -47,7 +47,7 @@ const router = createBrowserRouter(
 );
 const keycloak = new Keycloak({
   url: 'https://login.giftstowin.com/auth',
-  realm: 'cpa-app',
+  realm: 'giftstowin',
   clientId: 'front-end-reactjs-client'
 });
 
