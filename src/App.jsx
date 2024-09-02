@@ -132,8 +132,8 @@ console.log('1');
             Authorization: `Bearer ${keycloak.token}`,
           },
         })
-          .then(response => response.json())
-          .then(data => {
+          .then(response => console.log(response.json()))
+          .then(data => { console.log(data);
             sessionStorage.setItem('hasLoggedIn', 'true');
             console.log("sessionStorage.setItem('hasLoggedIn', 'true'); est appelé");
           })
