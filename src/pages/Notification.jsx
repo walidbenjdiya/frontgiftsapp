@@ -1,7 +1,7 @@
 import { Alert, Snackbar } from '@mui/material';
 import React, { useEffect, useState } from 'react';
 
-import { globalVariable } from './GlobaleVar';
+import { globalVariable } from '../GlobaleVar';
 
 
 const Notification = () => {

@@ -10,7 +10,7 @@ import NotificationsNoneOutlinedIcon from '@mui/icons-material/NotificationsNone
 import { useNavigate } from 'react-router-dom';
 import SettingsIcon from '@mui/icons-material/Settings';
 
-import { globalVariable } from './GlobaleVar';
+import { globalVariable } from '../GlobaleVar';
 
 const drawerWidth = 240;
 

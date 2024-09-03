@@ -2,7 +2,7 @@ import { Box, Button, Card, CardActionArea, CardActions, CardContent, CardMedia,
 import { useEffect, useState } from 'react';
 import { useNavigate, useOutletContext } from 'react-router-dom';
 import Chat from './chat';
-import { globalVariable } from './GlobaleVar';
+import { globalVariable } from '../GlobaleVar';
 
 
 const Offers = () => {

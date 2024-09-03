@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { DataGrid,  } from '@mui/x-data-grid';
-import { globalVariable } from './GlobaleVar';
+import { globalVariable } from '../GlobaleVar';
 
 
 

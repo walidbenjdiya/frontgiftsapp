@@ -4,7 +4,7 @@ import './profileImg.css'
 import { useForm, } from "react-hook-form";
 // import { Password } from '@mui/icons-material';
 import { useLocation, useOutletContext } from 'react-router-dom';
-import { globalVariable } from './GlobaleVar';
+import { globalVariable } from '../GlobaleVar';
 
 const Profile = () => {
   // const location = useLocation();
