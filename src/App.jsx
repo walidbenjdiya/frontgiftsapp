@@ -124,7 +124,6 @@ export default function MiniDrawer() {
 console.log('1');
       if (a) {
         console.log('2');
-        console.log(keycloak.token);
         fetch(`https://giftstowin-d4dwgeddf4dfe0av.francecentral-01.azurewebsites.net/welcome`, {
           method: "GET",
           headers: {
