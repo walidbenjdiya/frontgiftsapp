@@ -136,7 +136,7 @@ const LastStep = () => {
                                 key={index}
                                 sx={{
                                     position: 'relative', // Nécessaire pour positionner l'image de survol
-                                    maxWidth: '30%', // 5 cartes par ligne
+                                    maxWidth: '27%', // 5 cartes par ligne
                                     minWidth: '120px',
                                     boxSizing: 'border-box', // S'assure que le padding est inclus dans la largeur totale
                                     overflow: 'hidden', // Assure que l'image de survol ne dépasse pas les limites de la carte
