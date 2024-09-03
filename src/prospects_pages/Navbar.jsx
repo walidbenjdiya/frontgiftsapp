@@ -64,21 +64,21 @@ const Navbar = ({ handleLogin }) => {
                     <span className="navbar-toggler-icon"></span>
                 </button>
 
-                <div className="collapse navbar-collapse justify-content-end" id="navbarsExample03" style={{ margin: '0px 0px 0px 0%' }}>
+                <div className="collapse navbar-collapse justify-content-end" id="navbarsExample03" style={{ margin: '10px 0px 0px 0px' }}>
 
                     <ul className="navbar-nav" >
                         <li className="nav-item">
-                            <Typography
+                            <Typography className="nav-link"
                                 component="a"
                                 href='/'
                                 sx={{
                                     backgroundColor: 'transparent',
-                                    marginTop: '5px',
-                                    border: '1px solid white',
+                                    justifyContent:'center',alignItems:'center',
                                     color: 'white',
+                                    // marginRight:'15px',
                                     textDecoration: 'none',
                                     '&:hover': {
-                                        backgroundColor: '#ff5722',
+                                        color: '#ff5722',
                                     },
                                 }}
                             >
@@ -87,17 +87,17 @@ const Navbar = ({ handleLogin }) => {
                         </li>
 
                         <li className="nav-item">
-                        <Typography
+                        <Typography className="nav-link"
                                 component="a"
                                 href='/participation'
                                 sx={{
                                     backgroundColor: 'transparent',
-                                    marginTop: '5px',
-                                    border: '1px solid white',
+                                    justifyContent:'center',alignItems:'center',
                                     color: 'white',
+                                    // marginRight:'10px',
                                     textDecoration: 'none',
                                     '&:hover': {
-                                        backgroundColor: '#ff5722',
+                                        color: '#ff5722',
                                     },
                                 }}
                             >
@@ -105,7 +105,16 @@ const Navbar = ({ handleLogin }) => {
                             </Typography>
                         </li>
                         <li className="nav-item dropdown">
-                            <a className="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false" style={{ color: 'white' }}>Follow us</a>
+                            <Typography className="nav-link dropdown-toggle" href="#" component="a" data-bs-toggle="dropdown" aria-expanded="false" sx={{
+                                    backgroundColor: 'transparent',
+                                    justifyContent:'center',alignItems:'center',
+                                    color: 'white',
+                                    // marginRight:'15px',
+                                    textDecoration: 'none',
+                                    '&:hover': {
+                                        color: '#ff5722',
+                                    },
+                                }}>Follow us</Typography>
                             <ul className="dropdown-menu">
                                 <li style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '5px' }}>
                                     <img src='/facebook.png' height='23px' width='23px' ></img>
@@ -129,7 +138,7 @@ const Navbar = ({ handleLogin }) => {
                                 variant="contained"
 
                                 sx={{
-                                    backgroundColor: 'transparent', marginTop: '5px', border: '1px solid white',
+                                    backgroundColor: 'transparent', marginTop: '0px', border: '1px solid white',
                                     '&:hover': {
                                         backgroundColor: '#ff5722', // Utilise une couleur hexadécimale
                                     },

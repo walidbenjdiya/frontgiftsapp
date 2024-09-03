@@ -127,16 +127,7 @@ const LastStep = () => {
                                     sx={{ width: '100%', height: 'auto' }} // Assurez-vous que l'image s'adapte correctement
                                 />
                                 <CardContent sx={{ margin: '0px', padding: '14px', textAlign: 'center' }}>
-                                    <Typography
-                                        gutterBottom
-                                        sx={{
-                                            fontWeight: 'bold',
-                                            fontSize: '1rem', // Utilisez des unités relatives pour une meilleure adaptation
-                                            display: 'flex',
-                                            justifyContent: 'center',
-                                            marginBottom: '8px' // Ajoutez un espace entre les lignes si nécessaire
-                                        }}
-                                        component="div"
+                                    <Typography gutterBottom variant="h6" sx={{ fontWeight: 'bold' }} component="div"
                                     >
                                         {itemName.toUpperCase()} Gift
                                     </Typography>
