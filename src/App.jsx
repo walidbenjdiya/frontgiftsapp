@@ -11,6 +11,9 @@ import { useKeycloak } from '@react-keycloak/web';
 import { Outlet, useNavigate } from 'react-router-dom';
 import Notification from './pages/Notification';
 import { Alert, Snackbar } from '@mui/material';
+import { globalVariable } from './GlobaleVar';
+
+
 
 const drawerWidth = 240;
 
@@ -126,7 +129,7 @@ export default function MiniDrawer() {
 console.log('1');
       if (a) {
         console.log('2');
-        fetch(`https://giftstowin-d4dwgeddf4dfe0av.francecentral-01.azurewebsites.net/welcome`, {
+        fetch(`${globalVariable}/welcome`, {
           method: "GET",
           headers: {
             'Content-Type': 'application/json',

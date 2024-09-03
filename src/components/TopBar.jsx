@@ -10,6 +10,7 @@ import NotificationsNoneOutlinedIcon from '@mui/icons-material/NotificationsNone
 import { useNavigate } from 'react-router-dom';
 import SettingsIcon from '@mui/icons-material/Settings';
 
+import { globalVariable } from './GlobaleVar';
 
 const drawerWidth = 240;
 
@@ -42,7 +43,7 @@ const TopBar = ({ open, keycloak, userData, handleDrawerOpen, id }) => {
 
 
   useEffect(() => {
-    fetch(`https://giftstowin-d4dwgeddf4dfe0av.francecentral-01.azurewebsites.net/notifications/${id}`, {
+    fetch(`${globalVariable}/notifications/${id}`, {
       method: "GET",
       headers: {
         'Content-Type': 'application/json',

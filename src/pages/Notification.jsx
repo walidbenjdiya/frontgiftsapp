@@ -1,6 +1,9 @@
 import { Alert, Snackbar } from '@mui/material';
 import React, { useEffect, useState } from 'react';
 
+import { globalVariable } from './GlobaleVar';
+
+
 const Notification = () => {
 
     const [open2, setOpen2] = useState(false);
@@ -14,7 +17,7 @@ const Notification = () => {
   };
 
   useEffect(() => {
-    const eventSource = new EventSource('https://giftstowin-d4dwgeddf4dfe0av.francecentral-01.azurewebsites.net/notification');
+    const eventSource = new EventSource(`${globalVariable}/notification`);
     console.log("Notification SSE connection established");
 
     eventSource.onmessage = (event) => {

@@ -2,6 +2,9 @@ import { Box, Button, Card, CardActionArea, CardActions, CardContent, CardMedia,
 import { useEffect, useState } from 'react';
 import { useNavigate, useOutletContext } from 'react-router-dom';
 import Chat from './chat';
+import { globalVariable } from './GlobaleVar';
+
+
 const Offers = () => {
   const { keycloak } = useOutletContext();
 
@@ -15,7 +18,7 @@ const Offers = () => {
   }, [keycloak.profile]);
   useEffect(() => {
     
-    fetch(`https://giftstowin-d4dwgeddf4dfe0av.francecentral-01.azurewebsites.net/listoffres`, {
+    fetch(`${globalVariable}/listoffres`, {
       method: "GET",
       headers: {
         'Content-Type': 'application/json',

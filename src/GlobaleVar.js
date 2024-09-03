@@ -1,0 +1,1 @@
+export let globalVariable = 'https://giftstowin.azurewebsites.net';

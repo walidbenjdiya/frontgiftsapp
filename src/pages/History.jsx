@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { DataGrid,  } from '@mui/x-data-grid';
+import { globalVariable } from './GlobaleVar';
 
 
 
@@ -12,7 +13,7 @@ const columns = [
 const History = () => {
   const [historyData, sethistoryData]=useState([]);
   useEffect(() => {
-    fetch(`https://giftstowin-d4dwgeddf4dfe0av.francecentral-01.azurewebsites.net/history/${localStorage.getItem('userId')}`, {
+    fetch(`${globalVariable}/history/${localStorage.getItem('userId')}`, {
       method: "GET",
       headers: {
         'Content-Type': 'application/json',
