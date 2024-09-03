@@ -120,12 +120,12 @@ const LastStep = () => {
                      */}
                 <Stack
                     sx={{
-                        margin: '150px 5%',
+                        margin: '150px 0%',
                         display: 'flex',
                         flexWrap: 'wrap',
                         alignItems: 'center',
                         flexDirection: 'row',  // S'assure que les cartes sont alignées horizontalement
-                        justifyContent: 'center', // Centre les cartes horizontalement
+                        // justifyContent: 'center', // Centre les cartes horizontalement
                         gap: '16px' // Espacement entre les cartes
                     }}
                 >
@@ -136,8 +136,8 @@ const LastStep = () => {
                                 key={index}
                                 sx={{
                                     position: 'relative', // Nécessaire pour positionner l'image de survol
-                                    maxWidth: 'calc(110px - 66px)', // 5 cartes par ligne
-                                    minWidth: 'calc(34% - 16px)',
+                                    maxWidth: '30%', // 5 cartes par ligne
+                                    minWidth: '120px',
                                     boxSizing: 'border-box', // S'assure que le padding est inclus dans la largeur totale
                                     overflow: 'hidden', // Assure que l'image de survol ne dépasse pas les limites de la carte
 
