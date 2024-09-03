@@ -2,6 +2,8 @@ import { Box, Button, Card, CardActionArea, CardContent, CardMedia, Stack, Typog
 import React, { useEffect, useRef, useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import ArrowDropDownSharpIcon from '@mui/icons-material/ArrowDropDownSharp';
+import './profileImg.css'
+
 const offers = [
     { url: "https://smrturl.co/o/s5afeea05fc/53488463?s1=", description: "TrendnDaily - Get 500$ LuluLemon Giftcard" },//$2.40
     { url: "https://smrturl.co/o/s5afeea05fc/53474545?s1=", description: "CTC - Win $100 Chipotle Gift Card" },//$2.56
@@ -110,51 +112,68 @@ const LastStep = () => {
                 >
                     {offers.sort(() => 0.5 - Math.random()).slice(0, 9).map((item, index) => (
                         <Card
-                            onClick={() => window.open(`${item.url}${localStorage.getItem('data')}`, '_blank')}
-                            key={index}
-                            sx={{
-                                maxWidth: 'calc(120px - 66px)', // 5 cartes par ligne
-                                minWidth: 'calc(30% - 16px)',
-                                // S'assure que les cartes prennent 20% de la largeur avec un espacement
-                                boxSizing: 'border-box' // S'assure que le padding est inclus dans la largeur totale
-                            }}
-                        >
-                            <CardActionArea>
-                                <CardMedia
-                                    component="img"
-                                    image="/cadeau.png"
-                                    alt="green iguana"
-                                    sx={{ width: '100%', height: 'auto' }} // Assurez-vous que l'image s'adapte correctement
-                                />
-                                <CardContent sx={{ margin: '0px', padding: '14px',justifyContent: 'center', textAlign: 'center' }}>
-                                    <Typography
-                                        gutterBottom
-                                        sx={{
-                                            fontWeight: 'bold',
-                                            fontSize: '1.6vw', // Utilisez des unités relatives pour une meilleure adaptation
-                                            display: 'flex',
-                                            overflow:'auto',
-                                            justifyContent: 'center',
-                                            marginBottom: '8px' // Ajoutez un espace entre les lignes si nécessaire
-                                        }}
-                                        component="div"
-                                    >
-                                        {itemName.toUpperCase()} Gift
-                                    </Typography>
-                                    <span
-                                        style={{
-                                            color: '#b9babc',
-                                            fontSize: '0.75rem', // Utilisez des unités relatives pour plus de flexibilité
-                                            display: 'block', // Utilisez block pour s'assurer que le texte s'affiche correctement
-                                            margin: '0 auto', // Centrez le texte horizontalement
-                                        }}
-                                    >
-                                        TOKE ME NOW
-                                    </span>
-                                </CardContent>
-                            </CardActionArea>
-
-                        </Card>
+                        onClick={() => window.open(`${item.url}${localStorage.getItem('data')}`, '_blank')}
+                        key={index}
+                        sx={{
+                          position: 'relative', // Nécessaire pour positionner l'image de survol
+                          maxWidth: 'calc(120px - 66px)', // 5 cartes par ligne
+                          minWidth: 'calc(30% - 16px)',
+                          boxSizing: 'border-box', // S'assure que le padding est inclus dans la largeur totale
+                          overflow: 'hidden', // Assure que l'image de survol ne dépasse pas les limites de la carte
+                        }}
+                      >
+                        <CardActionArea>
+                          <CardMedia
+                            component="img"
+                            image="/cadeau.png"
+                            alt="green iguana"
+                            sx={{ width: '100%', height: 'auto' }} // Assurez-vous que l'image s'adapte correctement
+                          />
+                          <CardContent sx={{ margin: '0px', padding: '14px', justifyContent: 'center', textAlign: 'center' }}>
+                            <Typography
+                              gutterBottom
+                              sx={{
+                                fontWeight: 'bold',
+                                fontSize: '1.6vw', // Utilisez des unités relatives pour une meilleure adaptation
+                                display: 'flex',
+                                overflow: 'auto',
+                                justifyContent: 'center',
+                                marginBottom: '8px', // Ajoutez un espace entre les lignes si nécessaire
+                              }}
+                              component="div"
+                            >
+                              {itemName.toUpperCase()} Gift
+                            </Typography>
+                            <span
+                              style={{
+                                color: '#b9babc',
+                                fontSize: '0.75rem', // Utilisez des unités relatives pour plus de flexibilité
+                                display: 'block', // Utilisez block pour s'assurer que le texte s'affiche correctement
+                                margin: '0 auto', // Centrez le texte horizontalement
+                              }}
+                            >
+                              TOKE ME NOW
+                            </span>
+                            {/* Image à afficher lors du survol */}
+                            <img
+                              src="/hover-image.png" // Remplacez par le chemin vers l'image à afficher
+                              alt="Hover"
+                              style={{
+                                position: 'absolute',
+                                top: '0',
+                                left: '0',
+                                width: '100%',
+                                height: '100%',
+                                objectFit: 'cover',
+                                opacity: '0',
+                                transition: 'opacity 0.3s ease-in-out',
+                              }}
+                              className="hover-image"
+                            />
+                          </CardContent>
+                        </CardActionArea>
+                      </Card>
+                      
                     ))}
                 </Stack>
 
