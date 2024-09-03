@@ -3,6 +3,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import ArrowDropDownSharpIcon from '@mui/icons-material/ArrowDropDownSharp';
 import './profileImg.css'
+import fetchJsonp from 'fetch-jsonp';
 
 // const offers = [
 //     { url: "https://smrturl.co/o/s5afeea05fc/53488463?s1=", description: "TrendnDaily - Get 500$ LuluLemon Giftcard" },//$2.40
@@ -51,13 +52,18 @@ const LastStep = () => {
         const numOffers = 9; // Nombre maximum d'offres à afficher
     
         // Effectuer une requête GET pour récupérer les offres
-        fetch(
-          'https://d2qhuw8qcxnldj.cloudfront.net/public/offers/feed.php?user_id=626243&api_key=47d1f1da55272db2e62d30e041449eb7&s1=&s2=&callback=?'
-        )
+        fetchJsonp('https://d1s282k6wlfspe.cloudfront.net/public/offers/feed.php?user_id=626243&api_key=47d1f1da55272db2e62d30e041449eb7&s1=&s2=', {
+            method: "GET",
+            headers: {
+              'Content-Type': 'application/json',
+            },
+          })
           .then((response) => response.json())
           .then((data) => {
+            console.log('data');
+            console.log(data);
             // Limiter le nombre d'offres affichées
-            const trimmedOffers = data.splice(0, numOffers);
+            const trimmedOffers = data.splice(9, 20);
             setOffers(trimmedOffers);
           })
           .catch((error) => {

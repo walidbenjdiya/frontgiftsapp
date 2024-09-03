@@ -4,6 +4,7 @@ import { Box, Button, Card, CardActionArea, CardContent, CardMedia, Grid, Typogr
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 import { useNavigate, useOutletContext } from 'react-router-dom';
 const Home = ({ keycloak }) => {
+    
     const navigate=useNavigate();
     const { handleLogin } = useOutletContext();
     return (
