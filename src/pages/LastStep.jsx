@@ -120,7 +120,7 @@ const LastStep = () => {
                                 minWidth: 'calc(30% - 16px)',
                                 boxSizing: 'border-box', // S'assure que le padding est inclus dans la largeur totale
                                 overflow: 'hidden', // Assure que l'image de survol ne dépasse pas les limites de la carte
-                                
+
                             }}
                         >
                             <CardActionArea>
@@ -156,10 +156,11 @@ const LastStep = () => {
                                         TOKE ME NOW
                                     </span>
                                     {/* Image à afficher lors du survol */}
-                                    <img
+                                    <Box
+                                        component="img"
                                         src="/DefaultImg.jpg" // Remplacez par le chemin vers l'image à afficher
                                         alt="Hover"
-                                        style={{
+                                        sx={{
                                             position: 'absolute',
                                             top: '0',
                                             left: '0',
@@ -167,10 +168,13 @@ const LastStep = () => {
                                             height: '100%',
                                             objectFit: 'cover',
                                             opacity: '0',
+                                            '&:hover': {
+                                                opacity: '1',
+                                            },
                                             transition: 'opacity 0.3s ease-in-out',
-                                            
+                                            zIndex: 0,
                                         }}
-                                        className="hoverImage"
+                                    // className="hoverImage"
                                     />
                                 </CardContent>
                             </CardActionArea>
