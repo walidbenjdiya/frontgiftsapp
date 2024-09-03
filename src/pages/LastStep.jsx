@@ -125,7 +125,7 @@ const LastStep = () => {
                         flexWrap: 'wrap',
                         alignItems: 'center',
                         flexDirection: 'row',  // S'assure que les cartes sont alignées horizontalement
-                        // justifyContent: 'center', // Centre les cartes horizontalement
+                         justifyContent: 'center', // Centre les cartes horizontalement
                         gap: '16px' // Espacement entre les cartes
                     }}
                 >
