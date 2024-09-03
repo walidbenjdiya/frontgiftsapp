@@ -1,4 +1,4 @@
-import { Button } from '@mui/material';
+import { Button, Typography } from '@mui/material';
 import React, { useEffect, useState } from 'react';
 
 const Navbar = ({ handleLogin }) => {
@@ -40,23 +40,23 @@ const Navbar = ({ handleLogin }) => {
 
                         {/* Random number positioned above the image */}
 
-                    </div><div      
-                    style={{
-                        display: 'inline-block', marginLeft: '-21%', marginBottom: '45px',
-                        // transform: 'skew(15deg,-15deg)',
-                        // position: 'absolute',
-                        // top: '10%', // Adjust this value based on where you want the number to appear
-                        // left: '14%',
-                        // transform: 'translate(-50%, -50%)',
-                        fontSize: '22px', // Adjust the font size as needed
-                        fontWeight: 'bold',
-                        color: "#f9e39b",
-                        fontStyle: 'italic', opacity: '0.9'
-                    }}
-                >{randomNumber}
+                    </div><div
+                        style={{
+                            display: 'inline-block', marginLeft: '-21%', marginBottom: '45px',
+                            // transform: 'skew(15deg,-15deg)',
+                            // position: 'absolute',
+                            // top: '10%', // Adjust this value based on where you want the number to appear
+                            // left: '14%',
+                            // transform: 'translate(-50%, -50%)',
+                            fontSize: '22px', // Adjust the font size as needed
+                            fontWeight: 'bold',
+                            color: "#f9e39b",
+                            fontStyle: 'italic', opacity: '0.9'
+                        }}
+                    >{randomNumber}
 
 
-                </div>                <div className="blinking-circle" style={{ marginBottom: '50px', marginLeft: '5px' }}></div>
+                    </div>                <div className="blinking-circle" style={{ marginBottom: '50px', marginLeft: '5px' }}></div>
 
 
                 </a>
@@ -68,11 +68,41 @@ const Navbar = ({ handleLogin }) => {
 
                     <ul className="navbar-nav" >
                         <li className="nav-item">
-                            <a className="nav-link active" style={{ color: 'white' }} href='/'>Home</a>
+                            <Typography
+                                component="a"
+                                href='/'
+                                sx={{
+                                    backgroundColor: 'transparent',
+                                    marginTop: '5px',
+                                    border: '1px solid white',
+                                    color: 'white',
+                                    textDecoration: 'none',
+                                    '&:hover': {
+                                        backgroundColor: '#ff5722',
+                                    },
+                                }}
+                            >
+                                Home
+                            </Typography>
                         </li>
 
                         <li className="nav-item">
-                            <a className="nav-link" aria-disabled="true" href="/participation" style={{ color: 'white' }}>Participation</a>
+                        <Typography
+                                component="a"
+                                href='/participation'
+                                sx={{
+                                    backgroundColor: 'transparent',
+                                    marginTop: '5px',
+                                    border: '1px solid white',
+                                    color: 'white',
+                                    textDecoration: 'none',
+                                    '&:hover': {
+                                        backgroundColor: '#ff5722',
+                                    },
+                                }}
+                            >
+                                participation
+                            </Typography>
                         </li>
                         <li className="nav-item dropdown">
                             <a className="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false" style={{ color: 'white' }}>Follow us</a>

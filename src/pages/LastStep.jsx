@@ -60,7 +60,7 @@ const LastStep = () => {
         if (storedData === target) {
             const v = target.split('-');
             setItemName(v[0]); // v[0] correspond à la valeur de item.name
-             // Cela affichera la valeur de item.name
+            // Cela affichera la valeur de item.name
         }
         else {
             handlclick(); // Appelle directement la fonction pour naviguer vers '/notfound'
@@ -112,10 +112,10 @@ const LastStep = () => {
                         <Card
                             onClick={() => window.open(`${item.url}${localStorage.getItem('data')}`, '_blank')}
                             key={index}
-                            sx={{ 
+                            sx={{
                                 maxWidth: 'calc(120px - 66px)', // 5 cartes par ligne
                                 minWidth: 'calc(30% - 16px)',
-                                 // S'assure que les cartes prennent 20% de la largeur avec un espacement
+                                // S'assure que les cartes prennent 20% de la largeur avec un espacement
                                 boxSizing: 'border-box' // S'assure que le padding est inclus dans la largeur totale
                             }}
                         >
@@ -124,17 +124,35 @@ const LastStep = () => {
                                     component="img"
                                     image="/cadeau.png"
                                     alt="green iguana"
+                                    sx={{ width: '100%', height: 'auto' }} // Assurez-vous que l'image s'adapte correctement
                                 />
-                                <CardContent sx={{margin:'0px', padding:'14px'}}>
-                                    <Typography gutterBottom sx={{
-                                        fontWeight: 'bold', justifyContent: 'center',fontSize:'90%',
-                                        display: 'flex',
-                                    }} component="div">
-                                        {itemName.toUpperCase()} Gift</Typography> <br></br>
-                                    <span style={{color:'#b9babc',justifyContent: 'center',display: 'flex',fontSize:'45%', margin:'-13px 0px', maxWidth:'100%',}}>TOKE ME NOW</span>
-
+                                <CardContent sx={{ margin: '0px', padding: '14px', textAlign: 'center' }}>
+                                    <Typography
+                                        gutterBottom
+                                        sx={{
+                                            fontWeight: 'bold',
+                                            fontSize: '1rem', // Utilisez des unités relatives pour une meilleure adaptation
+                                            display: 'flex',
+                                            justifyContent: 'center',
+                                            marginBottom: '8px' // Ajoutez un espace entre les lignes si nécessaire
+                                        }}
+                                        component="div"
+                                    >
+                                        {itemName.toUpperCase()} Gift
+                                    </Typography>
+                                    <span
+                                        style={{
+                                            color: '#b9babc',
+                                            fontSize: '0.75rem', // Utilisez des unités relatives pour plus de flexibilité
+                                            display: 'block', // Utilisez block pour s'assurer que le texte s'affiche correctement
+                                            margin: '0 auto', // Centrez le texte horizontalement
+                                        }}
+                                    >
+                                        TOKE ME NOW
+                                    </span>
                                 </CardContent>
                             </CardActionArea>
+
                         </Card>
                     ))}
                 </Stack>
