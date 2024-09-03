@@ -120,7 +120,7 @@ const LastStep = () => {
                                 minWidth: 'calc(30% - 16px)',
                                 boxSizing: 'border-box', // S'assure que le padding est inclus dans la largeur totale
                                 overflow: 'hidden', // Assure que l'image de survol ne dépasse pas les limites de la carte
-                                '&:hover .hover-image': {
+                                '&:hover ': {
                                     opacity: 1, // L'image devient visible lors du survol
                                 }
                             }}
