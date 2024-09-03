@@ -156,7 +156,7 @@ const LastStep = () => {
                             </span>
                             {/* Image à afficher lors du survol */}
                             <img
-                              src="/hover-image.png" // Remplacez par le chemin vers l'image à afficher
+                              src="/DefaultImg.jpg" // Remplacez par le chemin vers l'image à afficher
                               alt="Hover"
                               style={{
                                 position: 'absolute',
