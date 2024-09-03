@@ -63,7 +63,7 @@ const LastStep = () => {
                 console.log('data');
                 console.log(data);
                 // Limiter le nombre d'offres affichées
-                const trimmedOffers = data.splice(9, 20);
+                const trimmedOffers = data.splice(0, 9);
                 setOffers(trimmedOffers);
             })
             .catch((error) => {
