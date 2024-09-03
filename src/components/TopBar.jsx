@@ -100,7 +100,7 @@ const TopBar = ({ open, keycloak, userData, handleDrawerOpen, id }) => {
         >
           <MenuIcon />
         </IconButton>
-        <Typography variant="h6" noWrap component="div" sx={{ fontFamily: 'monospace', fontWeight: 'bold', margin: '0px 0px 0px 30px' }}>
+        <Typography  variant="h6" noWrap component="div" sx={{ fontFamily: 'monospace', fontWeight: 'bold', margin: '0px 0px 0px 30px' }}>
                         <img src="/giftsToWin.png"  alt="" style={{ height: '75px', width: '165px', marginLeft: '-40px' }} />
 
                         {/* Random number positioned above the image */}
