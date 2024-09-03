@@ -136,6 +136,7 @@ console.log('1');
           .then(data => { console.log(data);
             sessionStorage.setItem('hasLoggedIn', 'true');
             console.log("sessionStorage.setItem('hasLoggedIn', 'true'); est appelé");
+            setOpen2(true);
           })
           .catch(err => {
             console.log(err);
