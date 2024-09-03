@@ -131,13 +131,13 @@ const LastStep = () => {
                 >
                     {offers.length > 0 ? (
                         offers.map((item, index) => (
-                            <Card className="hover-image"
+                            <Card 
                                 onClick={() => window.open(`${item.url}${localStorage.getItem('data')}`, '_blank')}
                                 key={index}
                                 sx={{
                                     position: 'relative', // Nécessaire pour positionner l'image de survol
-                                    maxWidth: 'calc(120px - 66px)', // 5 cartes par ligne
-                                    minWidth: 'calc(32% - 16px)',
+                                    maxWidth: 'calc(110px - 66px)', // 5 cartes par ligne
+                                    minWidth: 'calc(34% - 16px)',
                                     boxSizing: 'border-box', // S'assure que le padding est inclus dans la largeur totale
                                     overflow: 'hidden', // Assure que l'image de survol ne dépasse pas les limites de la carte
 
