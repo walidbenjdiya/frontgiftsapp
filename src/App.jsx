@@ -50,16 +50,18 @@ export default function MiniDrawer() {
   useEffect(() => {
     const eventSource = new EventSource('https://giftstowin-d4dwgeddf4dfe0av.francecentral-01.azurewebsites.net/notification');
     console.log("Notification SSE connection established");
-
+    console.log("SSE readyState:", eventSource.readyState); // Ajout ici pour vérifier l'état initial
+    
     eventSource.onmessage = (event) => {
       console.log("Received event:", event);
       console.log("Event data:", event.data);
       setMessage(event.data);
       setOpen2(true);
     };
-
+    
     eventSource.onerror = (error) => {
       console.error('Error in SSE connection:', error);
+      console.log("SSE readyState:", eventSource.readyState); // Ajout ici pour vérifier l'état en cas d'erreur
       eventSource.close();
     };
 
@@ -135,7 +137,7 @@ console.log('1');
           .then(data => { console.log(data);
             sessionStorage.setItem('hasLoggedIn', 'true');
             console.log("sessionStorage.setItem('hasLoggedIn', 'true'); est appelé");
-            setOpen2(true);
+            // setOpen2(true);
           })
           .catch(err => {
             console.log(err);
