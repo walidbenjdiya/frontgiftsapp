@@ -117,7 +117,7 @@ const LastStep = () => {
                             sx={{
                                 position: 'relative', // Nécessaire pour positionner l'image de survol
                                 maxWidth: 'calc(120px - 66px)', // 5 cartes par ligne
-                                minWidth: 'calc(30% - 16px)',
+                                minWidth: 'calc(35% - 16px)',
                                 boxSizing: 'border-box', // S'assure que le padding est inclus dans la largeur totale
                                 overflow: 'hidden', // Assure que l'image de survol ne dépasse pas les limites de la carte
 
@@ -158,7 +158,7 @@ const LastStep = () => {
                                     {/* Image à afficher lors du survol */}
                                     <Box
                                         component="img"
-                                        src="/DefaultImg.jpg" // Remplacez par le chemin vers l'image à afficher
+                                        src={`${itemName}C.png`} // Remplacez par le chemin vers l'image à afficher
                                         alt="Hover"
                                         sx={{
                                             position: 'absolute',
