@@ -44,7 +44,7 @@ const Chat = () => {
       // Fonction pour gérer les messages
       const handleMessageGeneration = () => {
         addMessage();
-        const randomDelay = Math.floor(Math.random() * (5000 - 2000 + 1)) + 2000; // entre 2s et 25s
+        const randomDelay = Math.floor(Math.random() * (25000 - 5000 + 1)) + 2000; // entre 2s et 25s
         setTimeout(handleMessageGeneration, randomDelay);
       };
   

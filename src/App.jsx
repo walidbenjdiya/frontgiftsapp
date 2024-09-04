@@ -12,7 +12,6 @@ import { Outlet, useNavigate } from 'react-router-dom';
 import Notification from './pages/Notification';
 import { Alert, Snackbar } from '@mui/material';
 import { globalVariable } from './GlobaleVar';
-import fetchJsonp from 'fetch-jsonp';
 
 
 
@@ -64,8 +63,9 @@ export default function MiniDrawer() {
     };
     
     eventSource.onerror = (error) => {
-      console.error('Error in SSE connection:', error);
-      console.log("SSE readyState:", eventSource.readyState); // Ajout ici pour vérifier l'état en cas d'erreur
+
+      // console.error('Error in SSE connection:', error);
+      // console.log("SSE readyState:", eventSource.readyState); // Ajout ici pour vérifier l'état en cas d'erreur
       eventSource.close();
     };
 
@@ -130,7 +130,7 @@ export default function MiniDrawer() {
 console.log('1');
       if (a) {
         console.log('2');
-        fetchJsonp(`${globalVariable}/welcome`, {
+        fetch(`${globalVariable}/welcome`, {
           method: "GET",
           headers: {
             'Content-Type': 'application/json',
@@ -138,14 +138,10 @@ console.log('1');
           },
         })
           .then(response => console.log(response.json()))
-          .then(data => { console.log(data);
-            sessionStorage.setItem('hasLoggedIn', 'true');
-            console.log("sessionStorage.setItem('hasLoggedIn', 'true'); est appelé");
+          .then(data => { 
             // setOpen2(true);
           })
           .catch(err => {
-            console.log(err);
-
           });
       }
 
