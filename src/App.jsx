@@ -12,6 +12,7 @@ import { Outlet, useNavigate } from 'react-router-dom';
 import Notification from './pages/Notification';
 import { Alert, Snackbar } from '@mui/material';
 import { globalVariable } from './GlobaleVar';
+import fetchJsonp from 'fetch-jsonp';
 
 
 
@@ -51,7 +52,7 @@ export default function MiniDrawer() {
   const [userData, usersetData] = useState('');
 
   useEffect(() => {
-    const eventSource = new EventSource('https://giftstowin-d4dwgeddf4dfe0av.francecentral-01.azurewebsites.net/notification');
+    const eventSource = new EventSource(`${globalVariable}/notification`);
     console.log("Notification SSE connection established");
     console.log("SSE readyState:", eventSource.readyState); // Ajout ici pour vérifier l'état initial
     
@@ -71,7 +72,7 @@ export default function MiniDrawer() {
     return () => {
       eventSource.close();
     };
-  }, [keycloak.authenticated]);
+  }, []);
 
 
   useEffect(() => {
@@ -129,7 +130,7 @@ export default function MiniDrawer() {
 console.log('1');
       if (a) {
         console.log('2');
-        fetch(`${globalVariable}/welcome`, {
+        fetchJsonp(`${globalVariable}/welcome`, {
           method: "GET",
           headers: {
             'Content-Type': 'application/json',
