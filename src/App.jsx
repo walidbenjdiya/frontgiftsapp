@@ -12,6 +12,7 @@ import { Outlet, useNavigate } from 'react-router-dom';
 import Notification from './pages/Notification';
 import { Alert, Snackbar } from '@mui/material';
 import { globalVariable } from './GlobaleVar';
+import fetchJsonp from 'fetch-jsonp';
 
 
 
@@ -129,7 +130,7 @@ export default function MiniDrawer() {
 console.log('1');
       if (a) {
         console.log('2');
-        fetch(`${globalVariable}/welcome`, {
+        fetchJsonp(`${globalVariable}/welcome`, {
           method: "GET",
           headers: {
             'Content-Type': 'application/json',
