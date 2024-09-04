@@ -106,10 +106,10 @@ const TopBar = ({ open, keycloak, userData, handleDrawerOpen, id }) => {
         >
           <MenuIcon />
         </IconButton>
-        <Typography onClick={handlefly} variant="h6" noWrap component="div" sx={{ fontFamily: 'monospace', fontWeight: 'bold', margin: '0px 0px 0px 30px', cursor:'pointer' }}>
-                        <img src="/giftsToWin.png" alt="" style={{ height: '75px', width: '165px', marginLeft: '-40px' }} />
+        <Typography onClick={handlefly} variant="h6" noWrap component="div" sx={{ fontFamily: 'monospace', fontWeight: 'bold', margin: '0px 0px 0px 30px', cursor: 'pointer' }}>
+          <img src="/giftsToWin.png" alt="" style={{ height: '75px', width: '165px', marginLeft: '-40px' }} />
 
-                        {/* Random number positioned above the image */}
+          {/* Random number positioned above the image */}
 
         </Typography>
         <Box flexGrow={1} />
@@ -133,7 +133,7 @@ const TopBar = ({ open, keycloak, userData, handleDrawerOpen, id }) => {
 
               </IconButton>
               <Paper>
-              
+
                 <Menu
                   id="menu-appbar"
                   anchorEl={anchorEl2}
@@ -154,23 +154,23 @@ const TopBar = ({ open, keycloak, userData, handleDrawerOpen, id }) => {
                       height: '280px', // Adjust the height as needed
                       display: 'flex',
                       margin: '0px 0px',
-                      justifyContent: notif.length > 0 ? 'left': 'center', //left or center
-                      alignItems:notif.length > 0 ? 'left': 'center',//left or center
+                      justifyContent: notif.length > 0 ? 'left' : 'center', //left or center
+                      alignItems: notif.length > 0 ? 'left' : 'center',//left or center
                     },
                   }}
                 >
-                  
+
                   {notif && notif.length > 0 ? (
                     <Box sx={{ margin: '0px 10px', height: '100%' }}>
                       {notif.map((msg, index) => (
                         <Typography key={index} sx={{ fontSize: '15px', margin: '10px 0px', padding: '0px 07px', backgroundColor: '#a6a6a63b', borderRadius: '8px' }}> {msg} </Typography>
                       ))}
                     </Box>) : (
-                    <Box sx={{  width: '100%', margin: '0px 0px' }}>
+                    <Box sx={{ width: '100%', margin: '0px 0px' }}>
                       <Typography> No Message yet </Typography>
                     </Box>)
                   }
-               
+
                 </Menu>
               </Paper>
             </div>
