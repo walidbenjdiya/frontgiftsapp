@@ -3,6 +3,7 @@ import Navbar from './Navbar';
 import { Box, Button, Card, CardActionArea, CardContent, CardMedia, Grid, Typography } from '@mui/material';
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 import { useNavigate, useOutletContext } from 'react-router-dom';
+import Recommended from './recommended';
 const Home = ({ keycloak }) => {
     const navigate=useNavigate();
     const { handleLogin } = useOutletContext();
@@ -121,6 +122,11 @@ const Home = ({ keycloak }) => {
                     </div>
                 </div>
             </div>
+            <hr className="featurette-divider" style={{ margin: '40px' }}></hr>
+            <div>
+                                    <Recommended />
+                                    </div>
+
             <hr className="featurette-divider" style={{ margin: '40px' }}></hr>
             <div>
                 <div style={{ display: 'flex', alignItems: 'center' }}>
@@ -303,6 +309,9 @@ const Home = ({ keycloak }) => {
                 </div>
             </div>
 
+            <div style={{backgroundColor:'black', color:'white', justifyContent:'center', alignItems:'center', display:'flex'}}>
+            Copyright © 2024 GiftsToWin
+            </div>
 
         </main>
     );

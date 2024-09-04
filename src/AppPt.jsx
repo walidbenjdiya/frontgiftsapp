@@ -37,7 +37,7 @@ const AppPt = () => {
         <div>
 
             <Navbar handleLogin={handleLogin}/>
-            <div style={{marginTop:'100px'}}>
+            <div style={{marginTop:'110px'}}>
                 <Outlet context={{ handleLogin }}/>
             </div>
         </div>
