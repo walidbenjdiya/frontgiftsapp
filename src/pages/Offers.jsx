@@ -10,6 +10,8 @@ const Offers = () => {
 
   const [val, setval] = useState('');
   const [val2, setval2] = useState(false);
+  const [offersData, setoffersData] = useState([]);
+
   useEffect(() => {
     if (keycloak.profile) {
       setval(keycloak.profile.username.split('@')[0]);
@@ -34,7 +36,6 @@ const Offers = () => {
       
   }, []);
   const [color, setColor] = useState('black');
-  const [offersData, setoffersData] = useState([]);
   // const offerurl = (offerurl) => {
   //window.open(offerurl, '_blank');
   //     };
@@ -63,7 +64,7 @@ const Offers = () => {
   }, []);
   return (
     <Box>
-    {val2 ? (
+    {val2 ? offersData.length !=0(
     <Box >
 
       <Stack sx={{
