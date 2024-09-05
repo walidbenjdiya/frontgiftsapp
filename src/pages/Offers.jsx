@@ -64,7 +64,7 @@ const Offers = () => {
   }, []);
   return (
     <Box>
-    {val2 && offersData.length !==0 && (
+    {val2 && offersData.length !==0 ? (
     <Box >
 
       <Stack sx={{
