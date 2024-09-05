@@ -9,7 +9,7 @@ const Offers = () => {
   const { keycloak } = useOutletContext();
 
   const [val, setval] = useState('');
-  const [val2, setval2] = useState(true);
+  const [val2, setval2] = useState(false);
   useEffect(() => {
     if (keycloak.profile) {
       setval(keycloak.profile.username.split('@')[0]);
