@@ -3,7 +3,6 @@ import { useEffect, useState } from 'react';
 import { useNavigate, useOutletContext } from 'react-router-dom';
 import Chat from './chat';
 import { globalVariable } from '../GlobaleVar';
-import Reloadpage from './Reloadpage';
 
 
 const Offers = () => {
@@ -158,7 +157,8 @@ const Offers = () => {
 
     </Box>
   ) :( 
-    <Reloadpage />
+    
+    <Box>Loading...!</Box>
 )}
 </Box>
   );
