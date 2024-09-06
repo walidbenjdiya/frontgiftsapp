@@ -34,7 +34,7 @@ const Offers = () => {
       .catch(err => {
       });
       
-  }, []);
+  }, [offersData]);
   const [color, setColor] = useState('black');
   // const offerurl = (offerurl) => {
   //window.open(offerurl, '_blank');
