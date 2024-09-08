@@ -34,7 +34,7 @@ const Offers = () => {
       .catch(err => {
       });
       
-  }, [offersData]);
+  }, [val2]);
   const [color, setColor] = useState('black');
   // const offerurl = (offerurl) => {
   //window.open(offerurl, '_blank');
@@ -156,8 +156,7 @@ const Offers = () => {
      
 
     </Box>
-  ) :( 
-    
+  ) :(
     <Box>Loading...!</Box>
 )}
 </Box>
