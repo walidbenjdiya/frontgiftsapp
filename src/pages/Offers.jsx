@@ -20,7 +20,7 @@ const Offers = () => {
   }, [keycloak.profile]);
   useEffect(() => {
     
-    fetch(`${globalVariable}/listoffres`, {
+    fetch(`${globalVariable}/listoffres/${localStorage.getItem('data')}`, {
       method: "GET",
       headers: {
         'Content-Type': 'application/json',

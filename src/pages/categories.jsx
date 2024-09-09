@@ -87,7 +87,7 @@ const Categories = () => {
         >
           {offersData.map((item, index) => (
             <Card key={index} sx={{ maxWidth: 345, minWidth: 295 }} onClick={() => {
-              localStorage.setItem('data', `${item.name}-${val}`);
+              localStorage.setItem('data', `${index}`);
 
               navigate(`/offers`, { state: `${index}` });
             }}>
