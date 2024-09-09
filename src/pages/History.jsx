@@ -6,6 +6,7 @@ import { globalVariable } from '../GlobaleVar';
 
 const columns = [
   { field: 'id', headerName: 'Id', width: 150 },
+  { field: 'Categorie', headerName: 'Categories', width: 250 },
   { field: 'offer', headerName: 'Offer', width: 250 },
   { field: 'date', headerName: 'Date', width:250  },
   { field: 'heure', headerName: 'Heure', width: 150 },

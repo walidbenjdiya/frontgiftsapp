@@ -5,7 +5,7 @@ import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 import { useNavigate, useOutletContext } from 'react-router-dom';
 import Recommended from './recommended';
 const Home = ({ keycloak }) => {
-    const navigate=useNavigate();
+    const navigate = useNavigate();
     const { handleLogin } = useOutletContext();
     return (
         <main>
@@ -22,7 +22,7 @@ const Home = ({ keycloak }) => {
                         </img>
                         <div className="container">
                             <div className="carousel-caption text-start">
-                                <h1>Gift Cards Giveaways</h1>
+                                <h1>Gaming Giveaways and competitions</h1>
                                 <p className="opacity-75">Win exciting gift cards for gaming consoles, mobile apps, and more! Enhance your experience for free—enter now for amazing offers!</p>
                                 <p><Button
                                     variant="contained"
@@ -44,9 +44,9 @@ const Home = ({ keycloak }) => {
                         <img className="bd-placeholder-img" width="100%" height="100%" src='/pano2.png' aria-hidden="true" preserveAspectRatio="xMidYMid slice" >
                         </img>
                         <div className="container">
-                            <div className="carousel-caption">
-                                {/* <h1>Participate now to get your Minecraft gift card now!</h1> */}
-                                <p style={{fontWeight:'bold'}}>Join now to win a Minecraft gift card! Unlock epic adventures and exclusive content—don&apos;t miss your chance, enter today!</p>
+                            <div className="carousel-caption text-start">
+                                <h1>Accessories And Beauty</h1>
+                                <p style={{ fontWeight: 'bold' }}>Join now to win luxurious beauty accessories! Elevate your style with exclusive items—don&apos;t miss out, enter today and shine!</p>
                                 <p><Button
                                     variant="contained"
 
@@ -67,9 +67,9 @@ const Home = ({ keycloak }) => {
                         <img className="bd-placeholder-img" width="100%" height="100%" src='/pano3.png' aria-hidden="true" preserveAspectRatio="xMidYMid slice" >
                         </img>
                         <div className="container">
-                            <div className="carousel-caption text-end">
-                                {/* <h1 style={{ color: '#ff5722', fontWeight: 'bold' }}>Gaming Tournament</h1> */}
-                                <p style={{color:'#ff5722', fontWeight:'bold'}}>Join our epic gaming tournament now! Compete globally, showcase your skills, and win incredible prizes. Don’t miss out—register today and prove you're the best!</p>
+                            <div className="carousel-caption text-start">
+                                <h1 style={{ color: 'white', fontWeight: 'bold' }}>Gift Cards</h1>
+                                <p style={{ color: 'white', fontWeight: 'bold' }}>Join now to win an exciting gift card! Unlock amazing rewards and exclusive perks—don&apos;t miss your chance, enter today!</p>
                                 <p><Button
                                     variant="contained"
 
@@ -113,7 +113,7 @@ const Home = ({ keycloak }) => {
                         <img className="bd-placeholder-img rounded-circle" width="100" height="100" src='/diversity.png' title='diversity' >
                         </img>
 
-                        <p>We offer a diverse range of prizes, from in-game assets and consoles to exclusive subscriptions and merchandise. Whatever your passion, there&apos;s something for every gamer on our platform.</p>
+                        <p>We offer a diverse range of prizes, from in-game assets and consoles to exclusive subscriptions ,merchandise and accessories. Whatever your passion, there&apos;s something for every gamer on our platform.</p>
                     </div>
                     <div className="col-lg-4" style={{ textAlign: 'center' }}>
                         <img className="bd-placeholder-img rounded-circle" width="100" height="100" src='/24-hours.png' title='daily' >
@@ -124,8 +124,8 @@ const Home = ({ keycloak }) => {
             </div>
             <hr className="featurette-divider" style={{ margin: '40px' }}></hr>
             <div>
-                                    <Recommended />
-                                    </div>
+                <Recommended />
+            </div>
 
             <hr className="featurette-divider" style={{ margin: '40px' }}></hr>
             <div>
@@ -155,10 +155,10 @@ const Home = ({ keycloak }) => {
                                     }}
                                 >
                                     <Typography gutterBottom variant="h5" component="div">
-                                        Gaming Hardware and Accessories
+                                        Gaming Hardware, Accessories, Competitions And Gift Cards
                                     </Typography>
                                     <Typography variant="body2">
-                                        Consoles and Accessories: Gaming consoles, controllers, headsets, and other peripherals.
+                                    Join now to win the latest gaming hardware, top-tier accessories, and exclusive gift cards! Level up your gameplay and compete in exciting challenges—don’t miss out, enter today!
                                     </Typography>
                                 </CardContent>
                             </CardActionArea>
@@ -185,12 +185,10 @@ const Home = ({ keycloak }) => {
                                     }}
                                 >
                                     <Typography gutterBottom variant="h5" component="div">
-                                        Subscriptions and Access
+                                        Accessories And Beauty
                                     </Typography>
                                     <Typography variant="body2">
-                                        Gaming services like Xbox Game Pass, PlayStation Plus, or cloud gaming subscriptions.
-                                        Exclusive Access: Early or beta access to games, private servers, or special events.
-                                    </Typography>
+                                    Join now to win luxurious beauty accessories! Elevate your style with exclusive items—don&apos;t miss out, enter today and shine!                                    </Typography>
                                 </CardContent>
                             </CardActionArea>
                         </Card>
@@ -201,7 +199,7 @@ const Home = ({ keycloak }) => {
                                 <CardMedia
                                     component="img"
                                     height="400"
-                                    image="/cat3.webp"
+                                    image="/cat3.png"
                                     alt="green iguana"
                                 />
                                 <CardContent
@@ -216,10 +214,10 @@ const Home = ({ keycloak }) => {
                                     }}
                                 >
                                     <Typography gutterBottom variant="h5" component="div">
-                                        Gaming competitions
+                                        Gifts Cards
                                     </Typography>
                                     <Typography variant="body2">
-                                        Join exciting tournaments, challenge players of all levels, and prove you&apos;re the best. Whether you&apos;re a casual gamer or a pro, each competition is your chance to shine and win exclusive rewards!
+                                    Join now to win gift cards in all your favorite categories! Whether it&apos;s for PayPal, Amazon, or other exciting options, don&apos;t miss your chance to unlock exclusive benefits and thrilling adventures. Enter today!
                                     </Typography>
                                 </CardContent>
                             </CardActionArea>
@@ -231,7 +229,7 @@ const Home = ({ keycloak }) => {
                                 <CardMedia
                                     component="img"
                                     height="400"
-                                    image="/cat4.webp"
+                                    image="/cat4.jfif"
                                     alt="green iguana"
                                 />
                                 <CardContent
@@ -246,12 +244,10 @@ const Home = ({ keycloak }) => {
                                     }}
                                 >
                                     <Typography gutterBottom variant="h5" component="div">
-                                        In-Game Assets
+                                        Animals Accessories And Clothes
                                     </Typography>
                                     <Typography variant="body2">
-                                        In-Game Currency and Items: Includes virtual currency, skins, and other exclusive in-game assets.
-                                        Game Copies: Full game copies, including standard and special editions.
-                                    </Typography>
+                                    Join now to win fabulous animal accessories and stylish clothes! Discover exclusive items and unique fashion for your furry friends—don&apos;t miss out, enter today!                                    </Typography>
                                 </CardContent>
                             </CardActionArea>
                         </Card>
@@ -309,8 +305,8 @@ const Home = ({ keycloak }) => {
                 </div>
             </div>
 
-            <div style={{backgroundColor:'black', color:'white', justifyContent:'center', alignItems:'center', display:'flex'}}>
-            Copyright © 2024 GiftsToWin
+            <div style={{ backgroundColor: 'black', color: 'white', justifyContent: 'center', alignItems: 'center', display: 'flex' }}>
+                Copyright © 2024 GiftsToWin
             </div>
 
         </main>

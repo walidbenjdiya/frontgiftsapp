@@ -19,6 +19,7 @@ import AppPt from './AppPt.jsx';
 import AboutUs from './prospects_pages/AboutUs.jsx';
 import Participation from './prospects_pages/Participation.jsx';
 import Home from './prospects_pages/Home.jsx';
+import Categories from './pages/categories.jsx';
 //1060557631608-rli54vnd1rv22j972i9ls1jvdepinmvv.apps.googleusercontent.com
 //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
 const router = createBrowserRouter(
@@ -32,12 +33,12 @@ const router = createBrowserRouter(
         <Route path='*' element={<NotFound />} />
       </Route>
       <Route path='/notfound' element={<NotFound />} />
-      <Route path="/offers" element={<App />}>
-
-        <Route index element={<Offers />} />
-        <Route path='/offers/history' element={<History />} />
-        <Route path='/offers/profile' element={<Profile />} />
-        <Route path='/offers/lastStep' element={<LastStep />} />
+      <Route path="/categories" element={<App />}>
+        <Route index element={<Categories />} />
+        <Route path='/categories/offers' element={<Offers />} />
+        <Route path='/categories/offers/history' element={<History />} />
+        <Route path='/categories/offers/profile' element={<Profile />} />
+        <Route path='/categories/offers/lastStep' element={<LastStep />} />
         <Route path='*' element={<NotFound />} />
         
         {/* ... etc. */}
