@@ -23,18 +23,18 @@ const Categories = () => {
         .then(response => response.json())
         .then(data => {
           console.log("//////////////");
-          console.log(data);
+          setval3(true);
           setoffersData(data);
         })
         .catch(err => {
         });
         
-    }, [val3]);
+    }, []);
 
     useEffect(() => {
       if (keycloak.profile) {
         setval(keycloak.profile.username.split('@')[0]);
-        setval3(true);
+        
       }
     }, [keycloak.profile]);
     
@@ -43,7 +43,7 @@ const Categories = () => {
 
     return (
         <Box>
-    {val3 && offersData.length !==0 ? (
+    {val3 || offersData.length !==0 ? (
     <Box >
 
       <Stack sx={{
