@@ -66,7 +66,7 @@ const DrawerHeader = styled('div')(({ theme }) => ({
 }));
 
 const array1 = [
-  { text: "Offers", icon: <LocalOfferIcon sx={{color:'white'}} />, path: "/categories/offers" },
+  { text: "Offers", icon: <LocalOfferIcon sx={{color:'white'}} />, path: "/categories" },
   { text: "History", icon: <HistoryIcon sx={{color:'white'}}/>, path: "/categories/history" },
 ]
 const array2 = [

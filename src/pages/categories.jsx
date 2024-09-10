@@ -41,7 +41,7 @@ const Categories = () => {
 
     return (
         <Box>
-    {val2 && offersData.length !==0 ? (
+    {val2 ? (
     <Box >
 
       <Stack sx={{
