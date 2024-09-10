@@ -7,6 +7,7 @@ import { globalVariable } from '../GlobaleVar';
 
 const Offers = () => {
   const { keycloak } = useOutletContext();
+  console.log(localStorage.getItem("data"));
 
   const [val, setval] = useState('');
   const [val2, setval2] = useState(false);
