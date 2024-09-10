@@ -8,7 +8,7 @@ const Categories = () => {
     const navigate = useNavigate();
 
     const [val, setval] = useState('');
-    const [val2, setval2] = useState(false);
+    const [val3, setval3] = useState(false);
     const [offersData, setoffersData] = useState([]);
   
     useEffect(() => {
@@ -29,12 +29,12 @@ const Categories = () => {
         .catch(err => {
         });
         
-    }, [val2]);
+    }, [val3]);
 
     useEffect(() => {
       if (keycloak.profile) {
         setval(keycloak.profile.username.split('@')[0]);
-        setval2(true);
+        setval3(true);
       }
     }, [keycloak.profile]);
     
@@ -43,7 +43,7 @@ const Categories = () => {
 
     return (
         <Box>
-    {val2 && offersData.length !==0 ? (
+    {val3 && offersData.length !==0 ? (
     <Box >
 
       <Stack sx={{
