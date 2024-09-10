@@ -28,6 +28,8 @@ const Categories = () => {
         })
           .then(response => response.json())
           .then(data => {
+            console.log("//////////////");
+            console.log(data);
             setoffersData(data);
           })
           .catch(err => {
@@ -89,7 +91,7 @@ const Categories = () => {
             <Card key={index} sx={{ maxWidth: 345, minWidth: 295 }} onClick={() => {
               localStorage.setItem('data', `${index}`);
 
-              navigate(`/offers`, { state: `${index}` });
+              navigate(`/categories/offers`, { state: `${index}` });
             }}>
               <CardActionArea>
                 <CardMedia
