@@ -78,13 +78,13 @@ const TopBar = ({ open, keycloak, userData, handleDrawerOpen, id }) => {
 
   };
   const handleOpen = () => {
-    naviagte('/offers/profile'
+    naviagte('/categories/offers/profile'
       // , { state: { userData, email } }
     );
 
   };
   const handlefly = () => {
-    naviagte('/offers'
+    naviagte('/categories/offers'
       // , { state: { userData, email } }
     );
 

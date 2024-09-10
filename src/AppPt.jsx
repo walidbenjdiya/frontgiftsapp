@@ -29,7 +29,7 @@ const AppPt = () => {
 
     useEffect(() => {
         if (keycloak.authenticated) {
-            navigate('/offers'); // Redirect to home if not authenticated
+            navigate('/categories'); // Redirect to home if not authenticated
         }
     }, [keycloak.authenticated, navigate]);
 
