@@ -67,7 +67,7 @@ const DrawerHeader = styled('div')(({ theme }) => ({
 
 const array1 = [
   { text: "Offers", icon: <LocalOfferIcon sx={{color:'white'}} />, path: "/categories/offers" },
-  { text: "History", icon: <HistoryIcon sx={{color:'white'}}/>, path: "/categories/offers/history" },
+  { text: "History", icon: <HistoryIcon sx={{color:'white'}}/>, path: "/categories/history" },
 ]
 const array2 = [
   { text: "facebook", icon: "/facebook.png", path: "https://www.facebook.com/people/Giftstowin/61565358622357/" },

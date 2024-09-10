@@ -91,33 +91,33 @@ const Categories = () => {
             <Card key={index} sx={{ maxWidth: 345, minWidth: 295 }} onClick={() => {
               localStorage.setItem('data', `${index}`);
 
-              navigate(`/categories/offers`, { state: `${index}` });
+              navigate(`/categories/offers`, { state: `${item.id}` });
             }}>
               <CardActionArea>
                 <CardMedia
                   component="img"
                   height="200px"
                   width="100%"
-                  image={item.image}
-                  alt={item.name}
+                  image={item.img}
+                  alt={item.title}
 
                 />
                 <CardContent >
                   <Typography gutterBottom variant="h6" sx={{ fontWeight: 'bold' }} component="div">
                     {item.title}
                   </Typography>
-                  <Typography variant="body2" color="text.secondary">
+                  {/* <Typography variant="body2" color="text.secondary">
                     {item.description}
-                  </Typography>
+                  </Typography> */}
                 </CardContent>
 
               </CardActionArea>
               <Divider />
-              <CardActions sx={{ justifyContent: 'center', alignItems: 'center' }}>
+              {/* <CardActions sx={{ justifyContent: 'center', alignItems: 'center' }}>
                 <Typography size="small" fontWeight={'bold'}>
                   The Draw {item.raffledraw}
                 </Typography>
-              </CardActions>
+              </CardActions> */}
             </Card>
           ))}
         </Stack>

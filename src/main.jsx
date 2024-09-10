@@ -36,8 +36,8 @@ const router = createBrowserRouter(
       <Route path="/categories" element={<App />}>
         <Route index element={<Categories />} />
         <Route path='/categories/offers' element={<Offers />} />
-        <Route path='/categories/offers/history' element={<History />} />
-        <Route path='/categories/offers/profile' element={<Profile />} />
+        <Route path='/categories/history' element={<History />} />
+        <Route path='/categories/profile' element={<Profile />} />
         <Route path='/categories/offers/lastStep' element={<LastStep />} />
         <Route path='*' element={<NotFound />} />
         
