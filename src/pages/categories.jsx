@@ -12,30 +12,32 @@ const Categories = () => {
     const [offersData, setoffersData] = useState([]);
   
     useEffect(() => {
+    
+      fetch(`${globalVariable}/categories`, {
+        method: "GET",
+        headers: {
+          'Content-Type': 'application/json',
+          Authorization: `Bearer ${localStorage.getItem('token')}`,
+        },
+      })
+        .then(response => response.json())
+        .then(data => {
+          console.log("//////////////");
+          console.log(data);
+          setoffersData(data);
+        })
+        .catch(err => {
+        });
+        
+    }, [val2]);
+
+    useEffect(() => {
       if (keycloak.profile) {
         setval(keycloak.profile.username.split('@')[0]);
         setval2(true);
       }
     }, [keycloak.profile]);
-    useEffect(() => {
     
-        fetch(`${globalVariable}/categories`, {
-          method: "GET",
-          headers: {
-            'Content-Type': 'application/json',
-            Authorization: `Bearer ${localStorage.getItem('token')}`,
-          },
-        })
-          .then(response => response.json())
-          .then(data => {
-            console.log("//////////////");
-            console.log(data);
-            setoffersData(data);
-          })
-          .catch(err => {
-          });
-          
-      }, [val2]);
 
 
 
