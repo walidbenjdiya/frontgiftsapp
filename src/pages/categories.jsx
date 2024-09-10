@@ -27,9 +27,10 @@ const Categories = () => {
           setoffersData(data);
         })
         .catch(err => {
+          setval3(true);
         });
         
-    }, []);
+    }, [val3]);
 
     useEffect(() => {
       if (keycloak.profile) {
