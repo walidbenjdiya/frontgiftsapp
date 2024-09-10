@@ -56,6 +56,9 @@ const Categories = () => {
           <Typography paragraph sx={{ fontWeight: 'bold', fontSize: '20px' }}>
             Welcome <span>{keycloak.profile ? val : "Username"}</span>,
           </Typography>
+          <Typography paragraph sx={{ fontWeight: 'bold', fontSize: '25px' }}>
+          Choose your favorite giveaway category and unlock amazing rewards!
+          </Typography>
           
           
         </Box>
