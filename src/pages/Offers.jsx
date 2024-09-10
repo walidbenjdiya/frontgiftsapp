@@ -29,9 +29,11 @@ const Offers = () => {
     })
       .then(response => response.json())
       .then(data => {
+        console.log(data);
         setoffersData(data);
       })
       .catch(err => {
+        console.log(err);
       });
       
   }, [val2]);
