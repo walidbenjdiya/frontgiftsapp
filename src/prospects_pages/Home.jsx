@@ -4,6 +4,7 @@ import { Box, Button, Card, CardActionArea, CardContent, CardMedia, Grid, Typogr
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 import { useNavigate, useOutletContext } from 'react-router-dom';
 import Recommended from './recommended';
+import './ForCss.css';
 const Home = ({ keycloak }) => {
     const navigate = useNavigate();
     const { handleLogin } = useOutletContext();
@@ -17,7 +18,7 @@ const Home = ({ keycloak }) => {
                 </div>
                 <div className="carousel-inner">
                     <div className="carousel-item active" style={{ height: '32rem' }}>
-                        <img className="bd-placeholder-img" width="100%" height="100%" src='/pano1.png' aria-hidden="true" preserveAspectRatio="xMidYMid slice" >
+                        <img className="bd-placeholder-img aa"  width="100%" height="100%" src='/pano1.png' aria-hidden="true" preserveAspectRatio="xMidYMid slice" >
 
                         </img>
                         <div className="container">
@@ -28,7 +29,7 @@ const Home = ({ keycloak }) => {
                                     variant="contained"
 
                                     sx={{
-                                        backgroundColor: 'transparent', border: '2px solid white',
+                                        backgroundColor: 'transparent', border: '2px solid white',fontWeight: 'bold',
                                         '&:hover': {
                                             backgroundColor: '#ff5722', // Utilise une couleur hexadécimale
                                         },
@@ -41,17 +42,17 @@ const Home = ({ keycloak }) => {
                         </div>
                     </div>
                     <div className="carousel-item" style={{ height: '32rem' }}>
-                        <img className="bd-placeholder-img" width="100%" height="100%" src='/pano2.png' aria-hidden="true" preserveAspectRatio="xMidYMid slice" >
+                        <img className="bd-placeholder-img aa" width="100%" height="100%" src='/pano2.png' aria-hidden="true" preserveAspectRatio="xMidYMid slice" >
                         </img>
                         <div className="container">
                             <div className="carousel-caption text-start">
                                 <h1>Accessories And Beauty</h1>
-                                <p style={{ fontWeight: 'bold' }}>Join now to win luxurious beauty accessories! Elevate your style with exclusive items—don&apos;t miss out, enter today and shine!</p>
+                                <p style={{ fontWeight: '' }}>Join now to win luxurious beauty accessories! Elevate your style with exclusive items—don&apos;t miss out, enter today and shine!</p>
                                 <p><Button
                                     variant="contained"
 
                                     sx={{
-                                        backgroundColor: 'transparent', border: '2px solid white',
+                                        backgroundColor: 'transparent', border: '2px solid white',fontWeight: 'bold',
                                         '&:hover': {
                                             backgroundColor: '#ff5722', // Utilise une couleur hexadécimale
                                         },
@@ -64,17 +65,17 @@ const Home = ({ keycloak }) => {
                         </div>
                     </div>
                     <div className="carousel-item" style={{ height: '32rem' }}>
-                        <img className="bd-placeholder-img" width="100%" height="100%" src='/pano3.png' aria-hidden="true" preserveAspectRatio="xMidYMid slice" >
+                        <img className="bd-placeholder-img aa" width="100%" height="100%" src='/pano3.png' aria-hidden="true" preserveAspectRatio="xMidYMid slice" >
                         </img>
                         <div className="container">
                             <div className="carousel-caption text-start">
                                 <h1 style={{ color: 'white', fontWeight: 'bold' }}>Gift Cards</h1>
-                                <p style={{ color: 'white', fontWeight: 'bold' }}>Join now to win an exciting gift card! Unlock amazing rewards and exclusive perks—don&apos;t miss your chance, enter today!</p>
+                                <p style={{ color: 'white', fontWeight: '' }}>Join now to win an exciting gift card! Unlock amazing rewards and exclusive perks—don&apos;t miss your chance, enter today!</p>
                                 <p><Button
                                     variant="contained"
 
                                     sx={{
-                                        backgroundColor: 'transparent', border: '2px solid white',
+                                        backgroundColor: 'transparent', border: '2px solid white',fontWeight: 'bold',
                                         '&:hover': {
                                             backgroundColor: '#ff5722', // Utilise une couleur hexadécimale
                                         },
