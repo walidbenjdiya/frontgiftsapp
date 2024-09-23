@@ -180,7 +180,11 @@ const [userData, setuserData]=useState('');
             }} {...register("state", { required: true })} error={errors.state} helperText={errors.state ? "This Field Is Required" : null} sx={{ flex: 1 }} label="state" disabled={change} variant="outlined" value={userData?.state}/>
           <TextField InputLabelProps={{
               shrink: true, // Assure que le label ne se superpose pas
-            }} sx={{ flex: 1 }} disabled={change} {...register("numero_Tele", { required: true })} error={Boolean(errors.numero_Tele)} helperText={errors.numero_Tele ? "This Field Is Required" : null} label="Phone Number" value={userData?.numero_Tele} type='tel' variant="outlined" />
+            }} sx={{ flex: 1 }} disabled={change} {...register("numero_Tele", { pattern: {
+              value: /^[0-9]{20}$/, // Ajuste selon le format souhaité
+              message: "Invalid phone number"
+            }
+          })} error={Boolean(errors.numero_Tele)} helperText={errors.numero_Tele ? "This Field Is Required" : null} label="Phone Number" value={userData?.numero_Tele} type='tel' variant="outlined" />
         </Stack>
         <Box sx={{ textAlign: 'right', margin: '70px 0px' }}>
           <Button type='submit' disabled={change} variant='contained' sx={{ backgroundColor: 'black', textTransform: 'capitalize', width: '20%', margin: '0px 50px' }}>
