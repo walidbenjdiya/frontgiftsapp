@@ -78,7 +78,7 @@ const TopBar = ({ open, keycloak, userData, handleDrawerOpen, id }) => {
 
   };
   const handleOpen = () => {
-    naviagte('/categories/offers/profile'
+    naviagte('/categories/profile'
       // , { state: { userData, email } }
     );
 
