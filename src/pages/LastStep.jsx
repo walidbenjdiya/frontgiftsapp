@@ -5,39 +5,7 @@ import ArrowDropDownSharpIcon from '@mui/icons-material/ArrowDropDownSharp';
 import './profileImg.css'
 import fetchJsonp from 'fetch-jsonp';
 
-// const offers = [
-//     { url: "https://smrturl.co/o/s5afeea05fc/53488463?s1=", description: "TrendnDaily - Get 500$ LuluLemon Giftcard" },//
-//     { url: "https://smrturl.co/o/s5afeea05fc/53474545?s1=", description: "CTC - Win $100 Chipotle Gift Card" },//
-//     { url: "https://smrturl.co/o/s5afeea05fc/53456454?s1=", description: "TopSurveySpot - Get $1000 Gift Card" },//
-//     { url: "https://smrturl.co/o/s5afeea05fc/53380771?s1=", description: "CreditAmerica - Get $1,000 Credit Line" },//
-//     { url: "https://smrturl.co/o/s5afeea05fc/53480237?s1=", description: "FreesamplesProusa - Get Buffalo Wild Wings" },//
-//     { url: "https://smrturl.co/o/s5afeea05fc/53466558?s1=", description: "CTC - Win $100 Dunkin Donuts Gift Card" },//
-//     { url: "https://smrturl.co/o/s5afeea05fc/53483025?s1=", description: "CTConnect - Win $100 Starbucks Gift Card" },//
-//     { url: "https://smrturl.co/o/s5afeea05fc/53449328?s1=", description: "FreeSamples - Get Starbucks Samples" },//
-//     { url: "https://smrturl.co/o/s5afeea05fc/53391324?s1=", description: "TAS - Win iPhone 15" },//
-//     { url: "https://smrturl.co/o/s5afeea05fc/53481870?s1=", description: "CTConnect - CostCo 100" },//
-//     { url: "https://smrturl.co/o/s5afeea05fc/53488462?s1=", description: "TheAmericanSweepstakes - Win a Carribean Getaway for Two" },//
-//     { url: "https://smrturl.co/o/s5afeea05fc/53460081?s1=", description: "FreesamplesProusa - Get Free Sephora Samples" },//
-//     { url: "https://smrturl.co/o/s5afeea05fc/53383209?s1=", description: "CTConnect - iPhone 14" },//
-//     { url: "https://smrturl.co/o/s5afeea05fc/53470801?s1=", description: "CTConnect - Taco Bell 100" },//
-//     { url: "https://smrturl.co/o/s5afeea05fc/53477600?s1=", description: "Prizegrab - 7 Eleven Giftcard" },//
-//     { url: "https://smrturl.co/o/s5afeea05fc/53356127?s1=", description: "FreeSamples - Win McDonalds Samples" },//
-//     { url: "https://smrturl.co/o/s5afeea05fc/53177516?s1=", description: "Rewards US - Cash $750" },//
-//     { url: "https://smrturl.co/o/s5afeea05fc/53483297?s1=", description: "Everydaywinner - Walmart July Black Friday" },//
-//     { url: "https://smrturl.co/o/s5afeea05fc/53289138?s1=", description: "DeluxeBucks - Chance To Win $25,000" },//
-//     { url: "https://smrturl.co/o/s5afeea05fc/53477899?s1=", description: "CTC - Win $100 Amazon Gift Card to Your Account" },//
-//     { url: "https://smrturl.co/o/s5afeea05fc/53455010?s1=", description: "CTCon - Roblox $50" },//
-//     { url: "https://smrturl.co/o/s5afeea05fc/53491202?s1=", description: "FreeSamples - Get Wendy's Sample" },//
-//     { url: "https://smrturl.co/o/s5afeea05fc/53484844?s1=", description: "EverydayWinner - 500 DAILY" },//
-//     { url: "https://smrturl.co/o/s5afeea05fc/53487321?s1=", description: "Prizegrab - Cash Prize" },//
-//     { url: "https://smrturl.co/o/s5afeea05fc/53491437?s1=", description: "CTConnect - Paypal 100" },//
-//     { url: "https://smrturl.co/o/s5afeea05fc/53488461?s1=", description: "NCC - Earn $750 Towards Best Buy" },//
-//     { url: "https://smrturl.co/o/s5afeea05fc/53486155?s1=", description: "Everydaywinner - Dunkin" },//
-//     { url: "https://smrturl.co/o/s5afeea05fc/53483300?s1=", description: "Prizegrab - SouthWest Giftcard" },//
-//     { url: "https://smrturl.co/o/s5afeea05fc/53478998?s1=", description: "Prizegrab - Restaurant Giftcard" },//
-//     { url: "https://smrturl.co/o/s5afeea05fc/53486156?s1=", description: "Prizegrab - Uber 25" },//
-//     { url: "https://smrturl.co/o/s5afeea05fc/1196338?s1=", description: "Rewards US - Walmart $100" },//
-// ]
+
 
 const LastStep = () => {
     const [offers, setOffers] = useState([]);
