@@ -1,7 +1,6 @@
 import { Box, Button, Card, CardActionArea, CardContent, CardMedia, Stack, Typography } from '@mui/material';
 import React, { useEffect, useRef, useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
-import ArrowDropDownSharpIcon from '@mui/icons-material/ArrowDropDownSharp';
 import './profileImg.css'
 import fetchJsonp from 'fetch-jsonp';
 
