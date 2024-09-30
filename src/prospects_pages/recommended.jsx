@@ -5,7 +5,7 @@ const Recommended = () => {
     const images = [
         '/epic.png',
         '/oracle.png',
-        '/amazon.png',
+        '/amazonP.png',
         '/twitchR.png',
         '/xbox.png',
         '/playstation.png',
