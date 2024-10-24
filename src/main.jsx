@@ -20,6 +20,7 @@ import AboutUs from './prospects_pages/AboutUs.jsx';
 import Participation from './prospects_pages/Participation.jsx';
 import Home from './prospects_pages/Home.jsx';
 import Categories from './pages/categories.jsx';
+import AzureRessourceDone from './pages/AzureRessourceDone.jsx';
 //1060557631608-rli54vnd1rv22j972i9ls1jvdepinmvv.apps.googleusercontent.com
 //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
 const router = createBrowserRouter(
@@ -33,6 +34,7 @@ const router = createBrowserRouter(
         <Route path='*' element={<NotFound />} />
       </Route>
       <Route path='/notfound' element={<NotFound />} />
+      <Route path='/thankyou' element={<AzureRessourceDone />} />
       <Route path="/categories" element={<App />}>
         <Route index element={<Categories />} />
         <Route path='/categories/offers' element={<Offers />} />

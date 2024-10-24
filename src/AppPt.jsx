@@ -21,7 +21,8 @@ const AppPt = () => {
 
   // }, [initialized]);
     const handleLogin = () => {
-        keycloak.login();
+        navigate('/thankyou');
+        // keycloak.login();
     };
     const handleLogout = () => {
         keycloak.logout();
