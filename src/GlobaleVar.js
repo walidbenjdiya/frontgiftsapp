@@ -1,1 +1,1 @@
-export let globalVariable = 'https://giftstowin-backend.azurewebsites.net';
+export let globalVariable = 'https://giftstowiin-backend.azurewebsites.net';
